@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body onload="start()">
+  {% for page in site.pages %}
+  <section id="page{{page.pageNo}}" class="page">
+    <!-- page.layout: {{ page.layout }} -->
+    {% if page.layout == "text" %}
+    {% include text.html content=page.content title=page.title button=page.button %}
+    {% endif %}
+
+    {% if page.layout == "pairwise" %}
+    {% include pairwise.html content=page.content title=page.title questions=page.questions %}
+    {% endif %}
+
+    {% if page.layout == "questions" %}
+    {% include questions.html content=page.content title=page.title questions=page.questions button=page.button page=page.pageNo%}
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  {% include ga.html %}
+  {% include firebase.html %}
+  <script src="js/app.js"></script>
+</body>
+
+</html>
