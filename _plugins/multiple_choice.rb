@@ -26,13 +26,20 @@ module Jekyll
       end
 
       @name = attributes["name"].gsub!(/\A"|"\Z/, '')
+      @label = attributes["label"]
       @type = attributes["type"].gsub!(/\A"|"\Z/, '')
 
       if @type.nil?
         @type = "radio"
       end
 
-      _output += "<div class='question'>"
+      if @label.nil?
+        @label = ""
+      else
+        @label = @label.gsub!(/\A"|"\Z/, '')
+      end
+
+      _output += '<div class="question form-group row"><legend class="col-form-label col-sm-2 pt-0">' + @label + '</legend><div class="col-sm-10">'
 
       # i = 0
       text.lines.each do |line|
@@ -40,8 +47,8 @@ module Jekyll
         # we then get the id, which is the part after [] in ()
         if line =~ /^[\[X|\]]/
           id = line[/[\(](.*)[\)]/,1]
-          _output += "<div>"
-          _output += '<label for="' + @name + '_' + id + '"><input type="' + @type + '" id="' + @name + '_' + id + '" '
+          _output += '<div class="form-check">'
+          _output += '<label class="form-check-label" for="' + @name + '_' + id + '"></label><input class="form-check-input" type="' + @type + '" id="' + @name + '_' + id + '" '
 
           unless @name.nil?
             _output += "name='" + @name + "' "
@@ -54,13 +61,13 @@ module Jekyll
           _output += ">"
           # _output += "<label>" + line + "</label>"
           _output += converter.convert(line[/[\)](.*)/,1]).gsub(/<\/?p[^>]*>/, "")
-          _output += "</label></div>"
+          _output += "</div>"
         else
           _output += converter.convert(line)
         end
       end
 
-      _output + "</div>"
+      _output + "</div></div>"
     end
   end
 end

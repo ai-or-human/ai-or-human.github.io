@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: questions
 title: "Some intro questions..."
 button: next page
@@ -100,3 +100,4 @@ Answers can be stored in any backend of your choosing, by default Firebase. Answ
 
 ## Pairwise comparison
 The next page demonstrates pair-wise comparison.
+ -->

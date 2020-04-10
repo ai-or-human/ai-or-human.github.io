@@ -1,7 +1,7 @@
 ---
 layout: text
 title: Example survey
-button: start
+button: Start
 pageNo: 0
 ---
 This is an example for the [Jekyll-survey repository](https://github.com/MatthijsZw/jekyll-survey). Surveys or questionnaires can be multipage or single page. This example is multipage with no questions on the first page.

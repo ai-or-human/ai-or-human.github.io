@@ -26,6 +26,7 @@ module Jekyll
       end
 
       @name = attributes["name"].gsub!(/\A"|"\Z/, '')
+      @label = attributes["label"]
       @type = attributes["type"]
 
       if @type.nil?
@@ -34,7 +35,13 @@ module Jekyll
         @type = @type.gsub!(/\A"|"\Z/, '')
       end
 
-      _output += "<div class='question'>"
+      if @label.nil?
+        @label = ""
+      else
+        @label = @label.gsub!(/\A"|"\Z/, '')
+      end
+
+      _output += "<div class='question form-group row'>"
 
       # i = 0
       text.lines.each do |line|
@@ -43,13 +50,13 @@ module Jekyll
         if line =~ /^[\[]/
           hint = id = line[/^[\[](.*)[\]]/,1]
           id = line[/[\(](.*)[\)]/,1]
-          _output += "<div>"
-          _output += '<label for="' + @name + '_' + id + '">'
+          # _output += '<div>'
+          _output += '<label class="col-sm-2 col-form-label" for="' + @name + '_' + id + '"> ' + @label + '</label>'
 
           if @type == "textarea"
-            _output += '<textarea '
+            _output += '<div class="col-sm-10"><textarea class="form-control"'
           else
-            _output += '<input type="text" '
+            _output += '<div class="col-sm-10"><input class="form-control" type="text" '
           end
 
           _output += 'id="' + @name + '_' + id + '" '
@@ -62,13 +69,13 @@ module Jekyll
             _output += "placeholder='" + hint + "' "
           end
 
-          _output += ">"
+          _output += "></div>"
           if @type == "textarea"
-            _output += '</textarea>'
+            _output += '</textarea></div>'
           end
 
           _output += converter.convert(line[/[\)](.*)/,1]).gsub(/<\/?p[^>]*>/, "")
-          _output += "</label></div>"
+          # _output += "</div>"
         else
           _output += converter.convert(line)
         end
