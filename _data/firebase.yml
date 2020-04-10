@@ -1,6 +1,8 @@
-apiKey:            ""
+apiKey:            "AIzaSyBsmV6qxGFjyefGrKwyooIuldvnvzUAODY"
 authDomain:        "gen-med-study.firebaseapp.com"
 databaseURL:       "https://gen-med-study.firebaseio.com"
 projectId:         "gen-med-study"
 storageBucket:     "gen-med-study.appspot.com"
 messagingSenderId: "840117656873"
+
+env: "testing"

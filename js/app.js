@@ -8,7 +8,7 @@ function startDB()
   // Get a database reference to our blog
   db = firebase.database();
   // Get a new reference:
-  ref = db.ref().push();
+  ref = db.ref('survey-data-' + config.env).push();
 }
 
 function nextPage()
@@ -33,6 +33,10 @@ function collectAndSendInputs() {
   var textareas = document.querySelectorAll("textarea")
   var sendObject = {}
 
+  sendObject["id"] = id
+  sendObject["startTime"] = startTime
+  sendObject["completeTime"] = new Date().toUTCString();
+
   for (var i = 0; i < inputs.length; i++)
   {
     if(inputs[i].type == "radio" || inputs[i].type == "checkbox")
@@ -47,9 +51,6 @@ function collectAndSendInputs() {
   }
 
   sendObject["pairwise"] = answers
-  sendObject["id"] = id
-  sendObject["startTime"] = startTime
-  sendObject["completeTime"] = new Date().toUTCString();
 
   ref.set(sendObject)
 }
