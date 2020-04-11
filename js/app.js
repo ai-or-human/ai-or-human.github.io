@@ -22,8 +22,8 @@ function nextPage()
 
   if(page === 1)
   {
-    calcCombos()
-    next()
+    // calcCombos()
+    // next()
   }
   page++
 }
@@ -50,7 +50,7 @@ function collectAndSendInputs() {
     sendObject[textareas[i].id] = textareas[i].value;
   }
 
-  sendObject["pairwise"] = answers
+  // sendObject["pairwise"] = answers
 
   ref.set(sendObject)
 }

@@ -5,7 +5,6 @@ button: Continue
 pageNo: 1
 ---
 
-<div>
 <form class="col-md-12">
 
 {% multiple_choice name:"participant-sex" type:"radio" label:"Sex" %}
