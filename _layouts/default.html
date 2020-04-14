@@ -12,17 +12,20 @@
       {% include text.html content=page.content title=page.title button=page.button %}
       {% endif %}
 
-      {% if page.layout == "pairwise" %}
-      {% include pairwise.html content=page.content title=page.title questions=page.questions %}
-      {% endif %}
-
-      {% if page.layout == "questions" %}
-      {% include questions.html content=page.content title=page.title questions=page.questions button=page.button page=page.pageNo%}
+      {% if page.layout == "question-image" %}
+      {% include question-image.html 
+        question-title=page.question-title 
+        question-text=page.question-text 
+        button=page.button 
+        page=page.pageNo
+      %}
+      {% assign question-image = site.data.materials[page.question-image] %}
       {% endif %}
     </section>
     {% endfor %}
   </div>
 
+  {% include randomize.html %}
   {% include ga.html %}
   {% include firebase.html %}
   <script src="js/app.js"></script>

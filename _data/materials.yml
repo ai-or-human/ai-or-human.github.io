@@ -1,0 +1,27 @@
+imageset-1:
+  id: 12876532
+  validity: generated-by-AI
+  src-1: "assets/materials/images/ffr1.jpg"
+  src-2: "assets/materials/images/ffr2.jpg"
+  src-3: "assets/materials/images/ffr3.jpg"
+
+imageset-2:
+  id: 78935641
+  validity: by-humans
+  src-1: "assets/materials/images/frr11.jpg"
+  src-2: "assets/materials/images/frr12.jpg"
+  src-3: "assets/materials/images/frr13.jpg"
+
+imageset-3:
+  id: 90745389
+  validity: by-humans
+  src-1: "assets/materials/images/frr14.jpg"
+  src-2: "assets/materials/images/frr15.jpg"
+  src-3: "assets/materials/images/frr16.jpg"
+
+imageset-4:
+  id: 45371098
+  validity: generated-by-AI
+  src-1: "assets/materials/images/ffr4.jpg"
+  src-2: "assets/materials/images/ffr5.jpg"
+  src-3: "assets/materials/images/ffr6.jpg"

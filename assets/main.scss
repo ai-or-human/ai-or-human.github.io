@@ -2,7 +2,13 @@
 ---
 
 @import
-  'vendors/bootstrap';
+	'vendors/bootstrap',
+	'vendors/randomize';
 
- @import
-  'components/true-false';
+@import
+	'pages/participants-data',
+	'pages/question-image';
+
+.page{
+	display: none;
+}

@@ -39,7 +39,7 @@ module Jekyll
         @label = @label.gsub!(/\A"|"\Z/, '')
       end
 
-      _output += '<div class="question form-group row"><legend class="col-form-label col-sm-2 pt-0">' + @label + '</legend><div class="col-sm-10">'
+      _output += '<div class="question"><label>' + @label + '</label>'
 
       # i = 0
       text.lines.each do |line|
@@ -47,8 +47,8 @@ module Jekyll
         # we then get the id, which is the part after [] in ()
         if line =~ /^[\[X|\]]/
           id = line[/[\(](.*)[\)]/,1]
-          _output += '<div class="form-check">'
-          _output += '<label class="form-check-label" for="' + @name + '_' + id + '"></label><input class="form-check-input" type="' + @type + '" id="' + @name + '_' + id + '" '
+          _output += '<div>'
+          _output += '<label for="' + @name + '_' + id + '"></label><input type="' + @type + '" id="' + @name + '_' + id + '" '
 
           unless @name.nil?
             _output += "name='" + @name + "' "
@@ -67,7 +67,7 @@ module Jekyll
         end
       end
 
-      _output + "</div></div>"
+      _output + "</div>"
     end
   end
 end
