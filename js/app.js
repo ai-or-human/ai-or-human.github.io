@@ -28,10 +28,12 @@ function nextPage()
 {
   var sendOverview = {};
   var countParticipants;
+  var currentPage = document.getElementById("page"+page);
 
   document.querySelectorAll('.page').forEach(function(pageElement) {
     pageElement.style.display = "none";
   });
+
   document.getElementById("page" + page).style.display = "block";
 
   if (page == 1){
@@ -49,6 +51,14 @@ function nextPage()
   }
 
   page++
+
+  var randomImages = $('#page'+page+' .random');
+
+  for(var i = 0; i < randomImages.length; i++){
+      var target = Math.floor(Math.random() * randomImages.length -1) + 1;
+      var target2 = Math.floor(Math.random() * randomImages.length -1) +1;
+      randomImages.eq(target).before(randomImages.eq(target2));
+  }
 }
 
 function collectAndSendInputs() {
