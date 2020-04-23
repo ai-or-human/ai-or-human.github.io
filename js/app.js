@@ -61,6 +61,12 @@ function nextPage()
   }
 }
 
+// function visualTransition(){
+//   var accent = document.querySelectorAll(".accent")
+
+//   accent[0].style.background-color = "black";
+// }
+
 function collectAndSendInputs() {
   var questions = document.querySelectorAll(".question")
   var answerPath = 'results/question-'

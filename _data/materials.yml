@@ -1,27 +1,36 @@
 imageset-1:
-  id: 12876532
+  question-id: 12876532
   validity: generated-by-AI
   src-1: "assets/materials/images/ffr1.jpg"
   src-2: "assets/materials/images/ffr2.jpg"
   src-3: "assets/materials/images/ffr3.jpg"
 
 imageset-2:
-  id: 78935641
+  question-id: 78935641
   validity: by-humans
   src-1: "assets/materials/images/frr11.jpg"
   src-2: "assets/materials/images/frr12.jpg"
   src-3: "assets/materials/images/frr13.jpg"
 
 imageset-3:
-  id: 90745389
+  question-id: 90745389
   validity: by-humans
   src-1: "assets/materials/images/frr14.jpg"
   src-2: "assets/materials/images/frr15.jpg"
   src-3: "assets/materials/images/frr16.jpg"
 
 imageset-4:
-  id: 45371098
+  question-id: 45371098
   validity: generated-by-AI
   src-1: "assets/materials/images/ffr4.jpg"
   src-2: "assets/materials/images/ffr5.jpg"
   src-3: "assets/materials/images/ffr6.jpg"
+
+textset-1:
+  question-id: 78378392
+  validity: generated-by-AI
+  text-id-1: 6732
+  title-1: "Shifting guidelines on coronavirus treatment in US could be ‘catastrophic’"
+  content-1: "In countries where coronaviruses cause disease, there is increasing support for putting an end to the use of experimental antiviral drugs. Some specialist groups fear that this will mean a shift in guidelines that could be catastrophic for those on the frontline.
+
+  As a result, they are asking the public to step up and show their concerns in a public petition: https://petition.parliament.uk/petitions/6811/release-the-carcass-specimens-for-the-science-community"

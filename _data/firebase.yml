@@ -4,5 +4,4 @@ databaseURL:       "https://gen-med-study.firebaseio.com"
 projectId:         "gen-med-study"
 storageBucket:     "gen-med-study.appspot.com"
 messagingSenderId: "840117656873"
-
 env: "testing"

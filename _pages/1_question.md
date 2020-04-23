@@ -1,8 +1,9 @@
 ---
-layout: question-image
+layout: question
 question-title: "Question 1"
 question-text: "What do you think of this image?"
-question-image: imageset-1
+type: text
+data-set: textset-1
 button: Continue
 pageNo: 1
 ---
