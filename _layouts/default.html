@@ -8,8 +8,8 @@
     {% for page in site.pages %}
     <section id="page{{page.pageNo}}" class="page">
       <!-- page.layout: {{ page.layout }} -->
-      {% if page.layout == "text" %}
-      {% include text.html content=page.content title=page.title button=page.button %}
+      {% if page.layout == "landing-page" %}
+      {% include landing-page.html %}
       {% endif %}
 
       {% if page.layout == "question" %}

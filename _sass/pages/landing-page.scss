@@ -1,0 +1,89 @@
+.page-landing{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+
+	text-align: center;
+
+	background: #f6fbff;
+
+	.focus{
+		margin-top: 12.5%;
+		padding: 0 5%;
+
+		.emoji-container{
+			margin-bottom: 16px;
+		}
+
+		.emoji{
+			font-size: 8rem;
+
+			&.human{
+				position: absolute;
+				animation: blink-animation-human steps(1, start) 1s infinite;
+			}
+
+			&.robot{
+				visibility: hidden;
+				animation: blink-animation-robot steps(1, start) 1s infinite;
+				animation-delay: 1s;
+			}
+		}
+
+		.title{
+			margin-bottom: 32px;
+
+			font-size: 3.5rem;
+			font-weight: bold;
+			color: #162353;
+		}
+
+		.subtitle{
+			margin-bottom: 24px;
+
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			color: white;
+			font-weight: bold;
+
+			span{
+				background: #E7197C;
+			}
+		}
+	}
+
+	button{
+
+		padding: 8px 32px;
+
+		font-size: 1.25rem;
+		font-weight: bold;
+		color: #fff;
+
+		border: 0;
+		border-radius: 0.5rem;
+
+		background: #E7197C;
+
+		transition: 0.3s;
+
+		&:hover{
+			box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+		}
+	}
+}
+
+@keyframes blink-animation-human{
+	0% {visibility: visible;}
+	50% {visibility: hidden;}
+	100% {visibility: visible;}
+}
+
+@keyframes blink-animation-robot{
+	0% {visibility: hidden;}
+	50% {visibility: visible;}
+	100% {visibility: hidden;}
+}
