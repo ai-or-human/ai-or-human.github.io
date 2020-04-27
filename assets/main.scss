@@ -2,8 +2,7 @@
 ---
 
 @import
-	'vendors/bootstrap',
-	'vendors/randomize';
+	'vendors/bootstrap';
 
 @import
 	'pages/participants-data',
@@ -16,4 +15,5 @@ body{
 
 .page{
 	display: none;
+	transition: 0.3s;
 }
