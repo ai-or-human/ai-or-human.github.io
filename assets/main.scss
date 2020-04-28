@@ -2,7 +2,16 @@
 ---
 
 @import
-	'vendors/bootstrap';
+	'base/_variables';
+
+@import
+	'utils/_media-query';
+
+@import
+	'vendors/bootstrap-reboot.min';
+
+@import
+	'layout/_default';
 
 @import
 	'pages/participants-data',

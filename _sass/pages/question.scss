@@ -12,34 +12,50 @@
 
 	background: #f6fbff;
 
-	.section-left{
-		order: 0;
+	.section-content{
+		order: 1;
 
 		position: relative;
-		width: 44%;
-		height: 100%;
+		width: 100%;
 
-		padding: 2.5%;
-
-		.image-container{
-			position: absolute;
-			right: 0;
+		@include respond-at($bp-large){
+			position: relative;
+			width: 44%;
+			height: 100%;
 
 			padding: 2.5%;
-			margin: 4% 0 0 10%;
+		}
+
+		.image-container{
+			background-color: white;
+
+			margin: 0 10%;
+			padding: 5%;
 
 			width: auto;
 
 			border-radius: 0.75rem;
 
-			background-color: white;
-
 			overflow: hidden;
 
-			.image{
-				max-height: 560px;
+			@include respond-at($bp-large){
+				position: absolute;
+				right: 0;
 
+				margin: 4% 0 0 10%;
+				padding: 2.5%;
+
+				border-radius: 0.75rem;
+			}
+
+			.image{
 				overflow: hidden;
+
+				max-height: 240px;
+
+				@include respond-at($bp-large){
+					max-height: 560px;
+				}
 			}
 
 			img{
@@ -49,20 +65,36 @@
 		}
 
 		.text-container{
-			position: absolute;
-			right: 0;
+			position: relative;
 
-			padding: 32px;
-			margin: 15% 0 0 10%;
+			padding: 1.5rem;
 
 			background: white;
-			border-radius: 0.75rem;
+			border-radius: 2rem;
+
+			text-align: left;
+
+			@include respond-at($bp-large){
+				position: absolute;
+				right: 0;
+
+				padding: 2rem;
+				margin: 15% 0 0 10%;
+
+				border-radius: 0.75rem;
+			}
 
 			.text-title{
-				font-size: 2rem;
+				font-size: 1.5rem;
 				font-weight: bolder;
 
-				margin-bottom: 0.75rem;
+				margin-bottom: 1rem;
+
+				@include respond-at($bp-large){
+					font-size: 2rem;
+
+					margin-bottom: 0.75rem;
+				}
 
 				span{
 					background: lightgrey;
@@ -73,38 +105,37 @@
 				font-size: 1rem;
 				line-height: 1.8rem;
 
-				span{
-					
-				}
+				overflow-x: scroll;
 			}
-		}
-
-		.accent{
-			position: absolute;
-			top: 0;
-			left: 0;
-
-			width: 87%;
-			height: 100%;
-
-			// background: #E7197C;
-			transition: background-color 0.5s ease-in-out;
 		}
 	}
 
-	.section-right{
-		order: 1;
+	.section-question{
+		order: 2;
 
-		position: relative;
-		width: 56%;
-		height: 100%;
+		&.media-small{
+			order: 0;
+		}
 
-		padding: 2.5%;
+		position: relative;;
+		width: 100%;
+
+		@include respond-at($bp-large){
+			position: relative;
+			width: 56%;
+			height: 100%;
+
+			padding: 2.5%;
+		}
 
 		.content{
-			margin-top: 30%;
+			margin: 10% 0;
 
 			text-align: center;
+
+			@include respond-at($bp-large){
+				margin-top: 30%;
+			}
 
 			.question-title{
 				display: inline-block;
@@ -121,16 +152,25 @@
 				width: 100%;
 
 				margin-top: 0.5rem;
+				padding: 0 1.5rem;
 
-				font-size: 2.5rem;
+				font-size: 2rem;
 				font-weight: bold;
 				color: #162353;
+
+				@include respond-at($bp-large){
+					font-size: 2.5rem;
+				}
 
 			}
 		}
 
 		.question{
-			margin-top: 3rem;
+			margin-top: 2rem;
+
+			@include respond-at($bp-large){
+				margin-top: 3rem;
+			}
 
 			text-align: center;
 		}
@@ -141,11 +181,19 @@
 			position: relative;
 
 			padding: 16px 32px;
-			margin-right: 2rem;
+			margin-right: 3rem;
 
 			border-radius: 0.5rem;
 
 			transition: 0.3s;
+
+			font-size: 2.5rem;
+
+			@include respond-at($bp-large){
+				margin-right: 2rem;
+
+				font-size: 1rem;
+			}
 
 			&:hover{
 				background: rgba(62, 78, 134,0.1);
@@ -190,7 +238,8 @@
 	}
 
 	.footer{
-		position: fixed;
+		order: 2;
+		position: relative;
 		bottom: 0;
 
 		width: 100%;
@@ -200,8 +249,15 @@
 
 		background: #162353;
 
+		@include respond-at($bp-large){
+			position: fixed;
+			bottom: 0;
+		}
+
 		button{
 			float: right;
+
+			width: 100%;
 
 			padding: 8px 32px;
 
@@ -215,6 +271,10 @@
 			background: #E7197C;
 
 			transition: 0.3s;
+
+			@include respond-at($bp-large){
+				width: auto;
+			}
 
 			&:hover{
 				box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);

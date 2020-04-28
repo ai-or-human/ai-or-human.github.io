@@ -1,0 +1,15 @@
+.media-small{
+	display: block !important;
+
+	@include respond-at($bp-large){
+		display: none !important;
+	}
+}
+
+.media-large{
+	display: none !important;
+
+	@include respond-at($bp-large){
+		display: block !important;
+	}
+}

@@ -4,7 +4,7 @@
 {% include head.html %}
 
 <body onload="start()">
-  <div class="container">
+  <div>
     {% for page in site.pages %}
     <section id="page{{page.pageNo}}" class="page">
       {% if page.layout == "landing-page" %}

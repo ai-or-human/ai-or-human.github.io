@@ -8,7 +8,7 @@ var refEntry,
 var dbEntryPath = 'survey-data-' + config.env + '/entries/entry-';
 var dbOverviewPath = 'survey-data-' + config.env + '/overview/';
 
-function startDB()
+function initDB()
 {
   db = firebase.database();
 
@@ -16,13 +16,7 @@ function startDB()
   refOverviewParticipantsCounter = db.ref(dbOverviewPath + 'total/participants');
 }
 
-function updateEntries(sendObject){
-  var updates = {};
-
-  refEntry.update(sendObject) 
-}
-
-function init(){
+function initQuiz(){
   var currentPage = document.getElementById("page"+page);
 
   document.querySelectorAll('.page').forEach(function(pageElement) {
@@ -36,6 +30,12 @@ function init(){
   randomizeContent(page);
 }
 
+function updateEntries(sendObject){
+  var updates = {};
+
+  refEntry.update(sendObject) 
+}
+
 function changePage(page){
   var currentPage = document.getElementById("page"+page);
 
@@ -46,7 +46,7 @@ function changePage(page){
   document.getElementById("page" + page).style.display = "block";
 }
 
-function nextPage(){
+function nextPage(button){
   var sendOverview = {};
   var countParticipants;
 
@@ -60,7 +60,7 @@ function nextPage(){
     })
   }
 
-  collectAndSendInputs(page);
+  collectAndSendInputs(page, button);
 
   changePage(page);
 
@@ -89,7 +89,8 @@ function randomizeContent(page) {
   }
 }
 
-function collectAndSendInputs(page) {
+function collectAndSendInputs(page, button) {
+  var buttonClicked = $(button);
   var answerPath = 'results/question-'
   var sendObject = {}
   var overviewQuestionObject = {};
@@ -117,14 +118,14 @@ function collectAndSendInputs(page) {
     $('input', question).each(function(){
       var input = $(this);
 
-      if (input.attr("type") == "radio"){
-        sendObject[answerPath + currentPage + '/' + input.attr("value")] = input.is(":checked");
-      }
+      sendObject[answerPath + currentPage + '/' + input.attr("value")] = "false";
 
-      if (input.is(":checked")){
-        if (input.attr("value") == "selects-ai" && dataQuestionId % 2 == 0){
+      if (input = buttonClicked){
+        sendObject[answerPath + currentPage + '/' + input.attr("value")] = "true";
+
+        if (buttonClicked.attr("value") == "selects-ai" && dataQuestionId % 2 == 0){
           dataResult = "correct";
-        } else if (input.attr("value") == "selects-human" && Math.abs(dataQuestionId % 2) == 1){
+        } else if (buttonClicked.attr("value") == "selects-human" && Math.abs(dataQuestionId % 2) == 1){
           dataResult = "correct";
         } else {
           dataResult = "wrong";
@@ -132,7 +133,7 @@ function collectAndSendInputs(page) {
       }
     })
 
-    //Counters
+    //Overview Counters
     var overviewTotalPath = 'total/';
     var overviewQuestionPath = 'per-question/question-' + dataQuestionId;
     var overviewContentPath = 'per-content/' + dataContentType + '-' + dataContentId;
@@ -214,6 +215,23 @@ function collectAndSendInputs(page) {
     sendObject[answerPath + currentPage + '/result'] = dataResult;
 
     updateEntries(sendObject);
+
+    //Counter
+    db.ref(dbEntryPath + id + '/results/total/answered').transaction(function(counter){
+      if (counter == null) {
+        return 1;
+      } else {
+        return counter + 1;
+      }
+    });
+
+    db.ref(dbEntryPath + id + '/results/total/' + dataResult).transaction(function(counter){
+      if (counter == null) {
+        return 1;
+      } else {
+        return counter + 1;
+      }
+    });
   })
 }
 
@@ -238,7 +256,7 @@ function animateFavicon(){
 
 function start()
 {
-  startDB();
-  init();
+  initDB();
+  initQuiz();
   animateFavicon();
 }

@@ -14,12 +14,20 @@
 		margin-top: 12.5%;
 		padding: 0 5%;
 
+		@include respond-at($bp-large){
+			margin-top: 10%;
+		}
+
 		.emoji-container{
 			margin-bottom: 16px;
 		}
 
 		.emoji{
 			font-size: 8rem;
+
+			@include respond-at($bp-large){
+				font-size: 10rem;
+			}
 
 			&.human{
 				position: absolute;
@@ -36,9 +44,13 @@
 		.title{
 			margin-bottom: 32px;
 
-			font-size: 3.5rem;
+			font-size: 2.5rem;
 			font-weight: bold;
 			color: #162353;
+
+			@include respond-at($bp-large){
+				font-size: 3.5rem;
+			}
 		}
 
 		.subtitle{
