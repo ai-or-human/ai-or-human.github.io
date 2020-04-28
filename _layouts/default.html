@@ -7,7 +7,6 @@
   <div class="container">
     {% for page in site.pages %}
     <section id="page{{page.pageNo}}" class="page">
-      <!-- page.layout: {{ page.layout }} -->
       {% if page.layout == "landing-page" %}
       {% include landing-page.html %}
       {% endif %}
@@ -29,6 +28,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   {% include ga.html %}
   {% include firebase.html %}
+  <script>var baseurl = "{{ site.baseurl }}"</script>
   <script src="js/app.js"></script>
 </body>
 

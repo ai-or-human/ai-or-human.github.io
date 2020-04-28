@@ -217,8 +217,28 @@ function collectAndSendInputs(page) {
   })
 }
 
+function animateFavicon(){
+  var favicon_images = [
+      "assets/favicon-1.ico",
+      "assets/favicon-2.ico"
+  ],
+  image_counter = 0;
+
+  setInterval(function() {
+    $("link[rel='icon']").remove();
+    $("link[rel='shortcut icon']").remove();
+    $("head").append('<link rel="icon" href="' + baseurl + favicon_images[image_counter] + '" type="image/x-icon">');
+        
+    if(image_counter == favicon_images.length -1)
+      image_counter = 0;
+    else
+      image_counter++;
+  }, 500);
+}
+
 function start()
 {
   startDB();
   init();
+  animateFavicon();
 }
