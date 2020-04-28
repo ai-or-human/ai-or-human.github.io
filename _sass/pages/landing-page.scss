@@ -19,14 +19,18 @@
 		}
 
 		.emoji-container{
-			margin-bottom: 16px;
+			margin-bottom: 1rem;
+
+			@include respond-at($bp-large){
+				margin-bottom: 1.5rem;
+			}
 		}
 
 		.emoji{
-			font-size: 8rem;
+			width: 160px;
 
 			@include respond-at($bp-large){
-				font-size: 10rem;
+				width: 200px;
 			}
 
 			&.human{

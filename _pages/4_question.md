@@ -1,6 +1,6 @@
 ---
 layout: question
-question-title: "Question 5"
+question-title: "Question 4"
 question-text: "AI or Human?"
 type: image
 content-set: imageset-3

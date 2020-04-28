@@ -17,13 +17,11 @@ function initDB()
 }
 
 function initQuiz(){
-  var currentPage = document.getElementById("page"+page);
+  var currentPage = $("#page"+page);
 
-  document.querySelectorAll('.page').forEach(function(pageElement) {
-    pageElement.style.display = "none";
-  });
+  $('.page.load').removeClass('load');
 
-  document.getElementById("page" + page).style.display = "block";
+  currentPage.addClass('show');
 
   page++;
 
@@ -37,13 +35,11 @@ function updateEntries(sendObject){
 }
 
 function changePage(page){
-  var currentPage = document.getElementById("page"+page);
+  var currentPage = $("#page"+page);
 
-  document.querySelectorAll('.page').forEach(function(pageElement) {
-    pageElement.style.display = "none";
-  });
+  $('.page.show').removeClass('show');
 
-  document.getElementById("page" + page).style.display = "block";
+  currentPage.addClass('show');
 }
 
 function nextPage(button){
