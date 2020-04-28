@@ -8,15 +8,21 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	overflow: scroll;
+	overflow: hidden;
 
 	background: #f6fbff;
 
 	.section-content{
-		order: 1;
+		order: 0;
 
-		position: relative;
+		position: absolute;
+		top: 0;
+		z-index: 1;
+
 		width: 100%;
+		height: 70%;
+
+		overflow-y: scroll;
 
 		@include respond-at($bp-large){
 			position: relative;
@@ -27,14 +33,8 @@
 		}
 
 		.image-container{
-			background-color: white;
-
-			margin: 0 10%;
-			padding: 5%;
-
-			width: auto;
-
-			border-radius: 0.75rem;
+			width: 100%;
+			height: 100%;
 
 			overflow: hidden;
 
@@ -42,25 +42,41 @@
 				position: absolute;
 				right: 0;
 
-				margin: 4% 0 0 10%;
+				width: auto;
+				height: auto;
+
+				margin: 4% 5% 0 10%;
 				padding: 2.5%;
 
+				background-color: white;
+
 				border-radius: 0.75rem;
+				box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
 			}
 
 			.image{
+				height: 100%;
+
 				overflow: hidden;
 
-				max-height: 240px;
-
 				@include respond-at($bp-large){
+					height: auto;
 					max-height: 560px;
 				}
 			}
 
 			img{
-				width: 100%;
-				height: auto;
+				margin-left: -7.5%;
+
+				width: auto;
+				height: 100%;
+
+				@include respond-at($bp-large){
+					margin: 0;
+					
+					width: 100%;
+					height: auto;
+				}
 			}
 		}
 
@@ -68,8 +84,8 @@
 			position: relative;
 
 			padding: 1.5rem;
+			padding-bottom: 6rem;
 
-			background: white;
 			border-radius: 2rem;
 
 			text-align: left;
@@ -79,9 +95,12 @@
 				right: 0;
 
 				padding: 2rem;
-				margin: 15% 0 0 10%;
+				margin: 15% 5% 0 10%;
+
+				background: white;
 
 				border-radius: 0.75rem;
+				box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
 			}
 
 			.text-title{
@@ -111,25 +130,36 @@
 	}
 
 	.section-question{
-		order: 2;
+		order: 1;
 
-		&.media-small{
-			order: 0;
-		}
+		position: absolute;
+		bottom: 0;
+		z-index: 2;
 
-		position: relative;;
 		width: 100%;
+		height: 38%;
+
+		background-color: white;
+
+		border-radius: 2rem 2rem 0 0;
+		box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
 
 		@include respond-at($bp-large){
 			position: relative;
+
 			width: 56%;
 			height: 100%;
 
 			padding: 2.5%;
+
+			background: none;
+
+			border-radius: 0;
+			box-shadow: none;
 		}
 
 		.content{
-			margin: 10% 0;
+			margin-top: 10%;
 
 			text-align: center;
 
@@ -166,7 +196,7 @@
 		}
 
 		.question{
-			margin-top: 2rem;
+			margin-top: 1.25rem;
 
 			@include respond-at($bp-large){
 				margin-top: 3rem;
@@ -180,8 +210,8 @@
 
 			position: relative;
 
-			padding: 16px 32px;
-			margin-right: 3rem;
+			margin-right: 5rem;
+			padding: 0.75rem 1.5rem;
 
 			border-radius: 0.5rem;
 
@@ -191,6 +221,7 @@
 
 			@include respond-at($bp-large){
 				margin-right: 2rem;
+				padding: 1rem 2rem;
 
 				font-size: 1rem;
 			}

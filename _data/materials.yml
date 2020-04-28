@@ -3,52 +3,78 @@ imageset-1:
   validity: generated-by-AI
 
   image-id-1: 2222
-  src-1: "assets/materials/images/ffr1.jpg"
+  src-1: "assets/materials/images/2222.jpg"
 
   image-id-2: 4532
-  src-2: "assets/materials/images/ffr2.jpg"
+  src-2: "assets/materials/images/4532.jpg"
 
   image-id-3: 9806
-  src-3: "assets/materials/images/ffr3.jpg"
+  src-3: "assets/materials/images/9806.jpg"
 
 imageset-2:
   question-id: 78935641
   validity: by-humans
 
   image-id-1: 6745
-  src-1: "assets/materials/images/frr11.jpg"
+  src-1: "assets/materials/images/6745.jpg"
 
   image-id-2: 9843
-  src-2: "assets/materials/images/frr12.jpg"
+  src-2: "assets/materials/images/9843.jpg"
 
   image-id-3: 2985
-  src-3: "assets/materials/images/frr13.jpg"
+  src-3: "assets/materials/images/2985.jpg"
 
 imageset-3:
   question-id: 90745389
   validity: by-humans
 
   image-id-1: 7811
-  src-1: "assets/materials/images/frr14.jpg"
+  src-1: "assets/materials/images/7811.jpg"
 
   image-id-2: 3521
-  src-2: "assets/materials/images/frr15.jpg"
+  src-2: "assets/materials/images/3521.jpg"
 
   image-id-3: 9833
-  src-3: "assets/materials/images/frr16.jpg"
+  src-3: "assets/materials/images/9833.jpg"
 
 imageset-4:
   question-id: 45371098
   validity: generated-by-AI
 
   image-id-1: 6472
-  src-1: "assets/materials/images/ffr4.jpg"
+  src-1: "assets/materials/images/6472.jpg"
 
   image-id-2: 7298
-  src-2: "assets/materials/images/ffr5.jpg"
+  src-2: "assets/materials/images/7298.jpg"
 
   image-id-3: 9382
-  src-3: "assets/materials/images/ffr6.jpg"
+  src-3: "assets/materials/images/9382.jpg"
+
+imageset-5:
+  question-id: 67482892
+  validity: generated-by-AI
+
+  image-id-1: 7820
+  src-1: "assets/materials/images/7820.jpg"
+
+  image-id-2: 4672
+  src-2: "assets/materials/images/4672.jpg"
+
+  image-id-3: 9858
+  src-3: "assets/materials/images/9858.jpg"
+
+imageset-6:
+  question-id: 78477819
+  validity: by-humans
+
+  image-id-1: 1231
+  src-1: "assets/materials/images/1231.jpg"
+
+  image-id-2: 8749
+  src-2: "assets/materials/images/8749.jpg"
+
+  image-id-3: 5625
+  src-3: "assets/materials/images/5625.jpg"
 
 textset-1:
   question-id: 78378392
@@ -56,7 +82,6 @@ textset-1:
   text-id-1: 6732
   title-1: "Shifting guidelines on coronavirus treatment in US could be ‘catastrophic’"
   content-1: "In countries where coronaviruses cause disease, there is increasing support for putting an end to the use of experimental antiviral drugs. Some specialist groups fear that this will mean a shift in guidelines that could be catastrophic for those on the frontline.
-
   As a result, they are asking the public to step up and show their concerns in a public petition: https://petition.parliament.uk/petitions/6811/release-the-carcass-specimens-for-the-science-community"
 
   text-id-2: 3564
@@ -64,3 +89,20 @@ textset-1:
   content-2: "More than 500,000 people attended rallies across Mexico on Saturday to denounce violence against women, in a demonstration that also called for the law to be modified.
   Women marched alongside men calling for a constitutional reform to prevent violence against women, and staged marches of their own.
   The gathering of marches marked International Women's Day, a day on which women's rights advocates work to highlight gender discrimination."
+
+textset-2:
+  question-id: 56438901
+  validity: by-humans
+  text-id-1: 5561
+  title-1: "Barcelona to play Napoli behind closed doors amid coronavirus fears"
+  content-1: "Barcelona’s Champions League last-16 second leg match with Napoli, scheduled for 18 March, will take place without spectators due to fears over the spread of the coronavirus, a club spokesman said on Tuesday.
+  The match – which will take place at Camp Nou after a 1-1 draw in Naples – is the latest Champions League fixture to be affected by the spread of the virus, with Paris Saint-Germain’s Wednesday return with Borussia Dortmund set to go ahead without supporters, as will Tuesday’s match between Valencia and Atalanta."
+
+  text-id-2: 3901 
+  title-2: "Tech giants struggle to stem 'infodemic' of false coronavirus claims"
+  content-2: "Click over to Google, type in “coronavirus”, and press enter.
+  The results you see will bear little resemblance to any other search.
+  There are no ads, no product recommendations, and no links to websites that have figured out how to win the search engine optimisation game. Government, NGO and mainstream media sources dominate.
+  Algorithms and user-generated content are out; gatekeepers and fact checking are in.
+  Silicon Valley has responded to the “infodemic” with aggressive intervention and an embrace of official sources and traditional media outlets.
+  Across the social web – on Facebook, Twitter, YouTube, Reddit, Instagram and Pinterest – search results related to Covid-19 are similarly predetermined."
