@@ -16,7 +16,7 @@
 	<div class="section-content">
 		{% assign content-set = site.data.materials[page.content-set] %}
 		{% if include.type == "image" %}
-			<div class="image-container shadow">
+			<div class="image-container">
 				<div class="image randomize" value={{ content-set.validity }}>
 					<img class="random" src={{ content-set.src-1 }} value={{ content-set.image-id-1 }}>
 					<img class="random" src={{ content-set.src-2 }} value={{ content-set.image-id-2 }}>
@@ -26,7 +26,7 @@
 		{% endif %}
 
 		{% if include.type == "text" %}
-			<div class="text-container shadow">
+			<div class="text-container">
 				<div class="text randomize">
 					<div class ="random" value={{ content-set.text-id-1 }}>
 						<div class="text-title">
