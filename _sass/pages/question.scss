@@ -8,7 +8,6 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 
 	background: #f6fbff;
 
@@ -17,10 +16,10 @@
 		position: absolute;
 		z-index: 2;
 
-		height: 10vh;
+		height: 12.5vh;
 		width: 100%;
 
-		padding: 1rem 1rem 0 1rem;
+		padding: 1rem;
 
 		.emoji-container{
 			display: inline-block;
@@ -126,7 +125,8 @@
 				width: auto;
 				height: 100%;
 
-				margin-left: -7.5vw;
+				margin-top: -2.5vh;
+				margin-left: -20vw;
 
 				object-fit: cover;
 
@@ -144,11 +144,8 @@
 
 			height: 100vh;
 
-			margin-top: 10vh;
-			padding: 1.5rem;
-			padding-bottom: 35vh;
-
-			border-radius: 2rem;
+			margin-top: 12.5vh;
+			padding: 1rem 1.5rem 40vh 1.5rem;
 
 			text-align: left;
 
