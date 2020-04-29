@@ -8,9 +8,16 @@
 			<div class="title">
 			<span>AI or Human</span>
 			</div>
-			<div class="question-title">
+			{% if include.type == "image" %}
+				<div class="question-title image">
+					<span>{{ include.question-title }}</span>
+				</div>
+			{% endif %}
+			{% if include.type == "text" %}
+			<div class="question-title text">
 				<span>{{ include.question-title }}</span>
 			</div>
+			{% endif %}
 		</div>
 	</div>
 	<div class="section-content">
@@ -26,6 +33,7 @@
 		{% endif %}
 
 		{% if include.type == "text" %}
+			<div class="gradient media-small"></div>
 			<div class="text-container">
 				<div class="text randomize">
 					<div class ="random" value={{ content-set.text-id-1 }}>

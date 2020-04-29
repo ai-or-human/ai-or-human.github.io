@@ -65,7 +65,14 @@
 
 				font-size: 0.8rem;
 				font-weight: bold;
-				color: #3E4E86;
+
+				&.text{
+					color: #3E4E86;
+				}
+
+				&.image{
+					color: white;
+				}
 			}
 		}
 	}
@@ -122,15 +129,28 @@
 			}
 
 			img{
+				display: block;
+
+				position: absolute;
+				top: 0;
+				left: -45vw;
+
+				margin: auto;
+
 				width: auto;
 				height: 100%;
 
-				margin-top: -2.5vh;
-				margin-left: -20vw;
-
 				object-fit: cover;
 
+				@include respond-at($bp-small-2){
+					top: 0;
+					left: 0;
+					right: 0;
+				}
+
 				@include respond-at($bp-large){
+					position: relative;
+
 					margin: 0;
 					
 					width: 100%;
@@ -154,6 +174,8 @@
 			@include respond-at($bp-large){
 				position: absolute;
 				right: 0;
+
+				height: auto;
 
 				padding: 2rem;
 				margin: 15% 5% 0 10%;
