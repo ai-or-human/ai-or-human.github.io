@@ -8,7 +8,7 @@
     projectId: "{{ site.data.firebase.projectId }}",
     storageBucket: "{{ site.data.firebase.storageBucket }}",
     messagingSenderId: "{{ site.data.firebase.messagingSenderId }}",
-    env: "{{ site.data.firebase.env }}"
+    env: "{{ site.GH_ENV }}"
   };
   firebase.initializeApp(config);
 </script>
