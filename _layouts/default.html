@@ -21,6 +21,10 @@
         content-set=page.content-set
       %}
       {% endif %}
+
+      {% if page.layout == "results-page" %}
+      {% include results-page.html %}
+      {% endif %}
     </section>
     {% endfor %}
   </div>
@@ -28,7 +32,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   {% include ga.html %}
   {% include firebase.html %}
-  <script>var baseurl = "{{ site.baseurl }}"</script>
+  {% include variables.html %}
   <script src="js/app.js"></script>
 </body>
 

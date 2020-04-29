@@ -5,8 +5,12 @@ var db = null;
 var refEntry,
     refOverviewParticipantsCounter;
 
-var dbEntryPath = 'survey-data-' + config.env + '/entries/entry-';
-var dbOverviewPath = 'survey-data-' + config.env + '/overview/';
+var dbEntryPath = 'survey-data-' + env + '/entries/entry-';
+var dbOverviewPath = 'survey-data-' + env + '/overview/';
+
+var resultObject,
+    resultTotalCorrect,
+    resultTotalAnswered;
 
 function initDB()
 {
@@ -43,8 +47,8 @@ function changePage(page){
 }
 
 function nextPage(button){
-  var sendOverview = {};
   var countParticipants;
+  var currentPage = $("#page"+page);
 
   if (page == 1){
     refOverviewParticipantsCounter.transaction(function(countParticipants) {
@@ -61,6 +65,26 @@ function nextPage(button){
   changePage(page);
 
   page++;
+
+  if($(currentPage).find(".page-results").length !== 0){
+    console.log("test");
+
+    db.ref(dbEntryPath + id + '/results/').once('value').then(function(snapshot){
+      resultObject = snapshot.val();
+
+      resultTotalAnswered = resultObject.total.answered;
+      resultTotalCorrect = resultObject.total.correct;
+
+      $("#correct").text(resultTotalCorrect);
+      $("#answered").text(" / " + resultTotalAnswered);
+
+      // $.map(resultObject, function(question){
+      //   if ("id" in question){
+      //     console.log(question.id);
+      //   }
+      // })
+    });
+  }
 
   randomizeContent(page);
 }

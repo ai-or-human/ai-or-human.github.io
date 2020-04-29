@@ -1,0 +1,61 @@
+.page-results{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+
+	text-align: center;
+
+	background: #f6fbff;
+
+	.section-total{
+		.result{
+			&.total{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				height: 30vh;
+
+				.badge{
+					display: inline-block;
+
+					width: 20vh;
+					height: 20vh;
+
+					color: white;
+					line-height: 20vh;
+
+					border-radius: 1.5rem;
+					box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+
+					background: #e7197c;
+
+					#correct{
+						font-size: 2.5rem;
+						font-weight: bold;
+					}
+
+					#answered{
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	.section-breakdown{
+		width: 100%;
+		height: 100vh;
+
+		margin-top: -15vh;
+		padding: 12.5vh 1.5rem 1.5rem 1.5rem;
+
+		background: white;
+
+		border-radius: 2rem 2rem 0 0;
+		box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+	}
+}

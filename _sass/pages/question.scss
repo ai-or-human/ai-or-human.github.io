@@ -42,6 +42,10 @@
 					animation-delay: 1s;
 				}
 			}
+
+			&:active{
+				background: rgba(62, 78, 134,0.1);
+			}
 		}
 
 		.text-container{
