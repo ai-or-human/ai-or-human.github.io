@@ -1,4 +1,18 @@
 <div class="page-question">
+	<div class ="navbar media-small">
+		<div class="emoji-container">
+			<img class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png">
+			<img class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png">
+		</div>
+		<div class="text-container">
+			<div class="title">
+			<span>AI or Human</span>
+			</div>
+			<div class="question-title">
+				<span>{{ include.question-title }}</span>
+			</div>
+		</div>
+	</div>
 	<div class="section-content">
 		{% assign content-set = site.data.materials[page.content-set] %}
 		{% if include.type == "image" %}
@@ -36,10 +50,10 @@
 	</div>
 	<div class="section-question">
 		<div class="content">
-			<div class="question-title">
+			<div class="question-title media-large">
 				<span>{{ include.question-title }}</span>
 			</div>
-			<div class="question-text">
+			<div class="question-text media-large">
 				<span>{{ include.question-text }}</span>
 			</div>
 			<div id={{ content-set.question-id }} class="question" type={{ include.type }}>
