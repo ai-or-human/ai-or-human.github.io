@@ -14,26 +14,5 @@
 	'layout/_default';
 
 @import
-	'pages/landing-page',
 	'pages/results-page',
 	'pages/question';
-
-body{
-	font-family: sans-serif;
-}
-
-.page{
-	visibility: hidden;
-	opacity: 0;
-
-	transition: 0.25s;
-
-	&.load{
-		display: none;
-	}
-
-	&.show{
-		visibility: visible;
-		opacity: 1;
-	}
-}

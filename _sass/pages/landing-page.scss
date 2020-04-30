@@ -36,12 +36,13 @@
 			&.human{
 				position: absolute;
 				animation: blink-animation-human steps(1, start) 1s infinite;
+				animation-delay: 2s;
 			}
 
 			&.robot{
 				visibility: hidden;
 				animation: blink-animation-robot steps(1, start) 1s infinite;
-				animation-delay: 1s;
+				animation-delay: 2s;
 			}
 		}
 
