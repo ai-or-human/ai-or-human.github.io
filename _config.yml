@@ -23,7 +23,7 @@ markdown: kramdown
 # theme: minima
 
 # GoogleAnalytics
-ga: ""
+ga: "UA-G-TS4FP6EBYM"
 
 #Optimization
 sass:
