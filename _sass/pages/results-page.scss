@@ -60,6 +60,7 @@
 				}
 
 				.result-item{
+					flex: auto;
 					position: relative;
 
 					width: 100%;
@@ -100,11 +101,12 @@
 						border-radius: 0.5rem;
 
 						&.text{
-							max-width: 40%;
+							max-width: 45%;
 						}
 
 						&.image{
-							width: 22.5%;
+							min-width: 22%;
+							max-width: 22%;
 						}
 					}
 
@@ -211,7 +213,7 @@
 							}
 
 							span{
-								font-size: 0.75rem;
+								font-size: 0.875rem;
 								line-height: 1.25rem;
 								vertical-align: middle;
 
