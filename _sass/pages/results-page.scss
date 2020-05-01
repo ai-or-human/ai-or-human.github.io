@@ -8,7 +8,7 @@
 
 	text-align: center;
 
-	background: #f6fbff;
+	background: #162353;
 
 	.section-total{
 		.result{
@@ -39,7 +39,8 @@
 					}
 
 					#answered{
-						font-size: 1.5rem;
+						font-size: 2.5rem;
+						font-weight: bold;
 					}
 				}
 			}
@@ -47,15 +48,183 @@
 	}
 
 	.section-breakdown{
-		width: 100%;
-		height: 100vh;
+		padding: 1.5rem;
 
-		margin-top: -15vh;
-		padding: 12.5vh 1.5rem 1.5rem 1.5rem;
+		.result{
+			&.breakdown{
+				@include respond-at($bp-large){
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: center;
+					align-content: flex-start;
+				}
 
-		background: white;
+				.result-item{
+					position: relative;
 
-		border-radius: 2rem 2rem 0 0;
-		box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+					width: 100%;
+
+					margin-bottom: 1rem;
+					padding: 0.5rem;
+
+					background-color: white;
+
+					border-radius: 0.75rem;
+					box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+
+					.indicator{
+						position: absolute;
+
+						top: -0.25rem;
+						right: -0.25rem;
+
+						width: 2rem;
+						height: 2rem;
+
+						background: lightgrey;
+
+						border-radius: 0.25rem;
+
+						&.correct{
+							background: limegreen;
+						}
+
+						&.wrong{
+							background: orangered;
+						}
+					}
+
+					@include respond-at($bp-large){
+						margin: 0.5rem;
+
+						border-radius: 0.5rem;
+
+						&.text{
+							max-width: 40%;
+						}
+
+						&.image{
+							width: 22.5%;
+						}
+					}
+
+					.question-title{
+						margin-bottom: 1rem;
+
+						font-weight: bold;
+						text-transform: uppercase;
+						color: #3E4E86;
+					}
+
+					.image-container{
+						margin-bottom: 1rem;
+
+						img{
+							width: 100%;
+							min-height: 100%;
+						}
+					}
+
+					.text-container{
+						text-align: left;
+
+						padding: 1rem 1rem 0 1rem;
+
+						.text-title{
+							max-height: 6rem;
+
+							margin-bottom: 0.5rem;
+
+							font-size: 1.2rem;
+							font-weight: bolder;
+							line-height: 2rem;
+
+							overflow: hidden;
+
+							@include respond-at($bp-large){
+								max-height: 7.2rem;
+
+								margin-bottom: 1rem;
+
+								font-size: 1.5rem;
+								line-height: 2.4rem;
+							}
+
+							span{
+								background: lightgrey;
+							}
+						}
+
+						.text-content{
+							max-height: 4.5rem;
+
+							margin-bottom: 0.5rem;
+
+							line-height: 1.5rem;
+
+							overflow: hidden;
+
+							@include respond-at($bp-small-3){
+								max-height: 6rem;
+							}
+
+							@include respond-at($bp-med-2){
+								max-height: 7.5rem;
+							}
+
+							@include respond-at($bp-large){
+								max-height: 9rem;
+
+								margin-bottom: 1rem;
+							}
+
+							@include respond-at($bp-xl){
+								max-height: 10.5rem;
+
+								margin-bottom: 1rem;
+							}
+						}
+					}
+
+					.desc{
+						text-align: left;
+
+						.desc-item{
+							display: block;
+
+							margin: 0.4rem 0.6rem;
+
+							text-align: left;
+
+							&:last-child{
+								margin-bottom: 1rem;
+							}
+
+							img{
+								width: 1.25rem;
+
+								margin-right: 0.25rem;
+
+								@include respond-at($bp-large){
+									width: 1.5rem;
+								}
+							}
+
+							span{
+								font-size: 0.75rem;
+								line-height: 1.25rem;
+								vertical-align: middle;
+
+								@include respond-at($bp-large){
+									font-size: 1rem;
+									line-height: 1.5rem
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
 	}
 }
