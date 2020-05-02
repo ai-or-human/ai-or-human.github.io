@@ -1,4 +1,5 @@
 <script>
   var baseurl = "{{ site.baseurl }}";
   var env = "{{ jekyll.environment }}" || "testing";
+  var src = {{ site.data.sources | jsonify }}
 </script>

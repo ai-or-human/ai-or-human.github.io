@@ -29,10 +29,7 @@
     {% endfor %}
   </div>
 
-  <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  {% if jekyll.environment == 'production' %}
-  {% include ga.html %}
-  {% endif %}
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   {% include firebase.html %}
   {% include variables.html %}
   <script defer src="js/app.js"></script>
