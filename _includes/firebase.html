@@ -1,7 +1,7 @@
 <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
-<script defer>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+<script>
   var config = {
     apiKey: "{{ site.data.firebase.apiKey }}",
     authDomain: "{{ site.data.firebase.authDomain }}",
@@ -15,7 +15,7 @@
   firebase.initializeApp(config);
 </script>
 {% if jekyll.environment == "production" %}
-<script defer>
+<script>
   firebase.analytics();
 </script>
 {% endif %}
