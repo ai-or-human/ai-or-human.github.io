@@ -8,7 +8,7 @@
 
 	text-align: center;
 
-	background: #f6fbff;
+	background: $clr-background;
 
 	.focus{
 		margin-top: 12.5%;
@@ -51,7 +51,7 @@
 
 			font-size: 2.5rem;
 			font-weight: bold;
-			color: #162353;
+			color: $clr-text-primary;
 
 			@include respond-at($bp-large){
 				font-size: 3.5rem;
@@ -67,7 +67,7 @@
 			font-weight: bold;
 
 			span{
-				background: #E7197C;
+				background: $clr-accent;
 			}
 		}
 	}
@@ -83,7 +83,7 @@
 		border: 0;
 		border-radius: 0.5rem;
 
-		background: #E7197C;
+		background: $clr-accent;
 
 		transition: 0.3s;
 

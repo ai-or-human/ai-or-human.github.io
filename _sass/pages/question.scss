@@ -9,7 +9,7 @@
 	width: 100%;
 	height: 100%;
 
-	background: #f6fbff;
+	background: $clr-background;
 
 	.navbar{
 		order: 0;
@@ -61,7 +61,7 @@
 				span{
 					padding: 0 0.25rem;
 
-					background: #E7197C;
+					background: $clr-accent;
 				}
 			}
 
@@ -72,7 +72,7 @@
 				font-weight: bold;
 
 				&.text{
-					color: #3E4E86;
+					color: $clr-text-secondary;
 				}
 
 				&.image{
@@ -93,10 +93,8 @@
 
 		@include respond-at($bp-large){
 			position: relative;
-			width: 44%;
+			width: 50%;
 			height: 100vh;
-
-			padding: 2.5%;
 		}
 
 		.image-container{
@@ -112,13 +110,17 @@
 				width: auto;
 				height: auto;
 
-				margin: 4% 5% 0 10%;
+				margin: 10%;
 				padding: 2.5%;
 
 				background-color: white;
 
 				border-radius: 0.75rem;
 				box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+
+				@include respond-at($bp-xl){
+					margin: 15%;
+				}
 			}
 
 			.image{
@@ -165,18 +167,22 @@
 			overflow-y: scroll;
 
 			@include respond-at($bp-large){
-				position: absolute;
-				right: 0;
+				position: relative;
 
 				height: auto;
+				max-height: 35rem;
 
 				padding: 2rem;
-				margin: 15% 5% 0 10%;
+				margin: 10%;
 
 				background: white;
 
 				border-radius: 0.75rem;
 				box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+
+				@include respond-at($bp-xl){
+					margin: 15%;
+				}
 			}
 
 			.text-title{
@@ -186,6 +192,12 @@
 				margin-bottom: 1rem;
 
 				@include respond-at($bp-large){
+					font-size: 1.5rem;
+
+					margin-bottom: 0.75rem;
+				}
+
+				@include respond-at($bp-xl-2){
 					font-size: 2rem;
 
 					margin-bottom: 0.75rem;
@@ -219,15 +231,15 @@
 		@include respond-at($bp-large){
 			position: relative;
 
-			width: 56%;
+			width: 50%;
 			height: 100vh;
-
-			padding: 2.5%;
 
 			background: none;
 
 			border-radius: 0;
 			box-shadow: none;
+
+			text-align: center;
 		}
 
 		.content{
@@ -241,13 +253,18 @@
 			box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
 
 			@include respond-at($bp-large){
-				margin: 0;
-				margin-top: 30%;
+				display: inline-block;
+
+				margin: 30% 5% 0 0;
 
 				background: none;
 
 				border-radius: 0;
 				box-shadow: none;
+
+				@include respond-at($bp-xl-2){
+					margin: 32.5% 15% 0 0;
+				}
 			}
 
 			.question-title{
@@ -257,7 +274,7 @@
 				font-size: 1rem;
 				font-weight: bold;
 				text-transform: uppercase;
-				color: #3E4E86;
+				color: $clr-text-secondary;
 			}
 
 			.question-text{
@@ -269,7 +286,7 @@
 
 				font-size: 2rem;
 				font-weight: bold;
-				color: #162353;
+				color: $clr-text-primary;
 
 				@include respond-at($bp-large){
 					font-size: 2.5rem;
@@ -306,12 +323,19 @@
 			@include respond-at($bp-large){
 				width: auto;
 
-				margin-right: 2rem;
-				padding: 1rem 2rem;
+				margin-right: 0.5rem;
+				padding: 0.75rem 1.5rem;
 
 				border-radius: 0.75rem;
 
-				font-size: 1rem;
+				font-size: 0.875rem;
+
+				@include respond-at($bp-xl){
+					margin-right: 1.5rem;
+					padding: 1rem 2rem;
+
+					font-size: 1rem;
+				}
 			}
 
 			&:hover{
@@ -334,7 +358,7 @@
 				transition: 0.3s;
 
 				&:checked ~ .answer{
-					border: 2px solid #3E4E86;
+					border: 2px solid $clr-text-secondary;
 				}
 			}
 

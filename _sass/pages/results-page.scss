@@ -8,39 +8,111 @@
 
 	text-align: center;
 
-	background: #f6fbff;
+	background: $clr-background;
 
 	.section-total{
 		.result{
 			&.total{
-				display: flex;
+
+				padding: 10% 7.5% 5% 7.5%;
+
 				justify-content: center;
 				align-items: center;
 
-				height: 30vh;
+				@include respond-at($bp-large){
+					padding: 5% 10% 2.5% 10%;
+				}
 
-				.badge{
-					display: inline-block;
+				.badge-container{
+					width: 100%;
 
-					width: 20vh;
-					height: 20vh;
+					.badge{
+						display: inline-block;
 
-					color: white;
-					line-height: 20vh;
+						width: 7rem;
+						height: 7rem;
 
-					border-radius: 1.5rem;
-					box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+						color: white;
+						line-height: 7rem;
 
-					background: #e7197c;
+						background: $clr-accent;
 
-					#correct{
+						border-radius: 0.5rem;
+
+						span{
+							font-size: 2.5rem;
+							font-weight: bold;
+						}
+					}
+				}
+
+				.overview-container{
+					.title{
+						margin: 1.5rem 0 0.75rem 0;
+
 						font-size: 2.5rem;
-						font-weight: bold;
+						color: $clr-text-primary;
 					}
 
-					#answered{
-						font-size: 2.5rem;
-						font-weight: bold;
+					.desc{
+						@include respond-at($bp-large){
+							margin-top: 1rem;
+							padding: 0 10%;
+						}
+
+						.lead{
+							span{
+								font-size: 1rem;
+								color: $clr-text-secondary;
+
+								@include respond-at($bp-large){
+									font-size: 1.375rem;
+								}
+							}
+						}
+
+						.desc-item{
+							display: inline-block;
+							margin: 0.75rem;
+
+							@include respond-at($bp-xl){
+								margin: 1rem;
+							}
+
+							.text{
+								padding: 0.75rem 0.75rem 0.5rem 0.75rem;
+								font-size: 2.5rem;
+								font-weight: bold;
+								color: $clr-text-primary;
+
+								@include respond-at($bp-large){
+									padding: 1rem 1rem 0.5rem 1rem;
+									font-size: 2.875rem;
+								}
+
+								.percentage{
+									margin-right: -0.875rem;
+
+									font-size: 1.5rem;
+									color: $clr-text-secondary;
+								}
+							}
+
+							.label{
+								font-size: 0.875rem;
+								font-weight: bold;
+								color: white;
+
+								@include respond-at($bp-large){
+									font-size: 1rem;
+								}
+
+								span{
+									padding: 0.2rem 0.4rem;
+									background: $clr-accent;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -76,8 +148,8 @@
 					.indicator{
 						position: absolute;
 
-						top: -0.25rem;
-						right: -0.25rem;
+						top: -0.5rem;
+						right: -0.5rem;
 
 						width: 2rem;
 						height: 2rem;
@@ -87,16 +159,16 @@
 						border-radius: 0.25rem;
 
 						&.correct{
-							background: limegreen;
+							background: $clr-correct;
 						}
 
 						&.wrong{
-							background: orangered;
+							background: $clr-wrong;
 						}
 					}
 
 					@include respond-at($bp-large){
-						margin: 0.5rem;
+						margin: 1rem;
 
 						border-radius: 0.5rem;
 
@@ -115,7 +187,7 @@
 
 						font-weight: bold;
 						text-transform: uppercase;
-						color: #3E4E86;
+						color: $clr-text-secondary;
 					}
 
 					.image-container{
@@ -197,6 +269,9 @@
 							margin: 0.4rem 0.6rem;
 
 							text-align: left;
+
+							text-overflow: ellipsis;
+							overflow: hidden;
 
 							&:last-child{
 								margin-bottom: 1rem;

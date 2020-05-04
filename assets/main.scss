@@ -8,11 +8,12 @@
 	'utils/_media-query';
 
 @import
-	'vendors/bootstrap-reboot';
+	'vendors/reboot';
 
 @import
 	'layout/_default';
 
 @import
+	'pages/landing-page',
 	'pages/results-page',
 	'pages/question';

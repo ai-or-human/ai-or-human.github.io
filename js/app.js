@@ -111,10 +111,28 @@ function displayResult(){
       var overviewTotalAnswers = overviewObject.total.answers.answers;
       var overviewTotalCorrect = overviewObject.total.answers.correct || 0;
 
+      var overviewParticipants = overviewObject.total.participants;
+
+      var overviewAnswers = overviewObject.total.answers.answers;
+      var overviewCorrect = overviewObject.total.answers.correct;
+      var overviewAvgResult = (overviewCorrect/overviewParticipants).toFixed(0);
+
+      var overviewImageAnswers = overviewObject.perContentType.image.answers;
+      var overviewImageCorrect = overviewObject.perContentType.image.correct;
+      var overviewImagePercentage = ((overviewImageCorrect/overviewImageAnswers) * 100).toFixed(0);
+
+      var overviewTextAnswers = overviewObject.perContentType.text.answers;
+      var overviewTextCorrect = overviewObject.perContentType.text.correct;
+      var overviewTextPercentage = ((overviewTextCorrect/overviewTextAnswers) * 100).toFixed(0);
+
       var resultTemplate = $("template#resultItem").html();
 
-      $("#correct").text(resultTotalCorrect);
-      $("#answered").text("/" + resultTotalAnswered);
+      $('span[data="correct"').text(resultTotalCorrect);
+      $('span[data="answered"').text("/" + resultTotalAnswered);
+      $('span[data="participants"').text(overviewParticipants);
+      $('span[data="avgResult"').text(overviewAvgResult + "/" + resultTotalAnswered);
+      $('span[data="imagePercentage"').text(overviewImagePercentage);
+      $('span[data="textPercentage"').text(overviewTextPercentage);
 
       $.map(resultObject, function(question){
         questionIndex++
@@ -165,7 +183,7 @@ function displayResult(){
             } else if (questionResult == "wrong"){
               $result.find('div[data="validity"] > span').text("You guessed AI but it is " + questionValidityText);
             }
-          }else if (questionValidity == "AI"){
+          } else if (questionValidity == "AI"){
             $result.find('div[data="validity"] > img[value="human"]').css("display","none");
             if (questionResult == "correct"){
               $result.find('div[data="validity"] > span').text("You guessed AI and it is " + questionValidityText);
