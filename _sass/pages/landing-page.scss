@@ -45,6 +45,8 @@
 				}
 
 				.title{
+					margin-bottom: 0.875rem;
+
 					color: $clr-text-primary;
 				}
 
@@ -267,6 +269,20 @@
 				}
 
 				.content{
+					span{
+						display: inline-block;
+
+						margin-bottom: 0;
+
+						font-size: 1rem;
+						font-family: monospace;
+						line-height: 2;
+						font-style: italic;
+
+						overflow: hidden;
+						white-space: nowrap;
+					}
+
 					p{
 						margin-bottom: 0;
 
@@ -276,7 +292,15 @@
 					}
 				}
 
-				.text-animate{
+				.text-animate-1{
+					animation: typewriter-1;
+				}
+
+				.text-animate-2{
+					animation: typewriter-2;
+				}
+
+				.text-animate-1, .text-animate-2{
 					display: inline-block;
 
 					position: relative;
@@ -287,8 +311,7 @@
 					font-family: monospace;
 					font-style: italic;
 
-					animation: typewriter;
-					animation-duration: 10s;
+					animation-duration: 20s;
 					animation-timing-function: steps(25, end);
 					animation-iteration-count: infinite;
 
@@ -395,13 +418,23 @@
 	100% {visibility: hidden;}
 }
 
-@keyframes typewriter{
-	0%, 100%{
+@keyframes typewriter-1{
+	0%, 50%, 100%{
 		width: 0;
 	}
 
-	20%, 80%{
-		width: 7.4rem;
+	10%, 40%{
+		width: 8.45rem;
+	}
+}
+
+@keyframes typewriter-2{
+	0%, 50%, 100%{
+		width: 0;
+	}
+
+	60%, 90%{
+		width: 6.5rem;
 	}
 }
 
