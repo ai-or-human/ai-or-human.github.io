@@ -1,15 +1,132 @@
 <div class="page-landing">
-	<div class="focus">
-		<div class="emoji-container">
-			<img class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png">
-			<img class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png">
+	<div class="navbar media-large">
+		<div class="wrapper">
+			<a class="emoji-container" href="{{ site.baseurl }}">
+				<img class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png">
+				<img class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png">
+			</a>
+			<div class="text-container">
+				<div class="title">
+					<span>AI or Human</span>
+				</div>
+			</div>
+			<div class="link-container">
+				<div class="link">
+					<a href="#s-about">About</a>
+				</div>
+				<div class="link">
+					<a href="#s-creators">Creators</a>
+				</div>
+			</div>
 		</div>
-		<div class="subtitle">
-			<span>AI or Human</span>
+	</div>
+	<div class="navbar media-small">
+		<div class="wrapper">
+			<a class="emoji-container" href="{{ site.baseurl }}">
+				<img class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png">
+				<img class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png">
+			</a>
 		</div>
-		<div class="title">
-			<span>Can you tell the difference?</span>
+	</div>
+	<section class="section-hero">
+		<div class="hero wrapper">
+			<div class="highlight-container media-large">
+				<div class="highlight">
+					{% for item in site.data.materials.landing-page %}
+					<div class="item">
+						<div class="cover">
+							<span>Human?</span>
+						</div>
+						<img src = {{ item }} >
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="text-container">
+				<div class="subtitle media-small">
+					<span>AI vs Human</span>
+				</div>
+				<h1 class="title">
+					<span>Can you tell the difference?</span>
+				</h1>
+				<p class="lead">
+					More than 500,000 people attended rallies across Mexico on Saturday to denounce violence against women, in a demonstration that also called for the law to be modified.
+				</p>
+				<button onclick="nextPage()">Start the Quiz!</button>
+			</div>
 		</div>
-		<button onclick="nextPage()">Start the Quiz!</button>
+	</section>
+	<section class="section-highlight media-small">
+		<div class="highlight-container">
+			<div class="highlight">
+				{% for item in site.data.materials.landing-page %}
+				<div class="item">
+					<div class="cover">
+						<span>Human?</span>
+					</div>
+					<img src = {{ item }} >
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+	<section id="s-about" class="section-about">
+		<div class="wrapper about">
+			<div class="text-container">
+				<h3 class="heading-caption">The Project</h3>
+				<h2>On the internet, nobody knows you're AI</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+			<div class="highlight-container">
+				<div class="title">
+					<span>The Proliferation of Fake News</span>
+				</div>
+				<div>
+					<span class="text-animate">— Written by AI</span>
+				</div>
+				<div class="content">
+					<p>The "fake news" news epidemic afflicts people of all backgrounds—from Democrats to Republicans. Not only has this the form of fake news become more pervasive than ever before, it has also become a game in which news consumers are competing for access to legitimate sources, according to a new report from the National Newspaper Publishers Association (NNPA).</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="s-creators" class="section-creators">
+		<div class="wrapper creators">
+			<div class="text-container">
+				<h2>Created by</h2>
+			</div>
+			<div class="creators-container">
+				<div class="item">
+					<div class="photo">
+						<img src="assets/materials/images/4532.jpg">
+					</div>
+					<div class="text">
+						<h3>Name</h3>
+						<p>Description</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="photo">
+						<img src="assets/materials/images/4532.jpg">
+					</div>
+					<div class="text">
+						<h3>Name</h3>
+						<p>Description</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="photo">
+						<img src="assets/materials/images/4532.jpg">
+					</div>
+					<div class="text">
+						<h3>Name</h3>
+						<p>Description</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="footer">
+
 	</div>
 </div>

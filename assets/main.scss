@@ -2,13 +2,18 @@
 ---
 
 @import
-	'base/_variables';
+	'vendors/reboot';
 
 @import
 	'utils/_media-query';
 
 @import
-	'vendors/reboot';
+	'base/_variables',
+	'base/_typography';
+
+@import
+	'components/_scaffolding',
+	'components/_navbar';
 
 @import
 	'layout/_default';

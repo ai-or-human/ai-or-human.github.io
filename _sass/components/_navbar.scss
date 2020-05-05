@@ -1,0 +1,77 @@
+.navbar{
+	.wrapper{
+		position: relative;
+
+		padding: 1.5rem 0 0 0;
+	}
+
+	.emoji-container{
+		order: 2;
+		margin-bottom: 1rem;
+		margin-right: 1rem;
+
+		@include respond-at($bp-large){
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	.emoji{
+		width: 40px;
+
+		@include respond-at($bp-large){
+			width: 60px;
+		}
+
+		&.human{
+			position: absolute;
+			animation: blink-animation-human steps(1, start) 1s infinite;
+			animation-delay: 2s;
+		}
+
+		&.robot{
+			visibility: hidden;
+			animation: blink-animation-robot steps(1, start) 1s infinite;
+			animation-delay: 2s;
+		}
+	}
+
+	.text-container{
+		display: inline-block;
+
+		vertical-align: middle;
+
+		.title{
+			font-size: 1rem;
+			text-transform: uppercase;
+			color: white;
+			font-weight: bold;
+
+			span{
+				padding: 0.2rem 0.4rem;
+
+				background: $clr-accent;
+			}
+		}
+	}
+
+	.link-container{
+		display: inline-block;
+		position: absolute;
+
+		right: 0;
+
+		.link{
+			display: inline-block;
+
+			height: 60px;
+
+			margin-right: 2rem;
+
+			line-height: 60px;
+
+			&:last-child{
+				margin-right: 0.5rem;
+			}
+		}
+	}
+}

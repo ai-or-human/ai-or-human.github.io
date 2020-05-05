@@ -13,7 +13,7 @@ function initDB()
   db = firebase.database();
 
   refEntry = db.ref(dbEntryPath + id);
-  refOverviewParticipantsCounter = db.ref(dbOverviewPath + 'total/participants');
+  refOverviewParticipantsCounter = db.ref(dbOverviewPath + 'total/participants/started');
 }
 
 function initQuiz(){
@@ -91,6 +91,14 @@ function displayResult(){
   var resultObject;
   var overviewObject;
 
+  db.ref(dbOverviewPath + 'total/participants/completed').transaction(function(counter){
+    if (counter == null) {
+      return 1;
+    } else {
+      return counter + 1;
+    }
+  })  
+
   loadResultData(function(object){
     resultObject = object;
 
@@ -111,7 +119,7 @@ function displayResult(){
       var overviewTotalAnswers = overviewObject.total.answers.answers;
       var overviewTotalCorrect = overviewObject.total.answers.correct || 0;
 
-      var overviewParticipants = overviewObject.total.participants;
+      var overviewParticipants = overviewObject.total.participants.completed;
 
       var overviewAnswers = overviewObject.total.answers.answers;
       var overviewCorrect = overviewObject.total.answers.correct;
