@@ -396,17 +396,17 @@
 }
 
 @keyframes typewriter{
-	0, 100%{
+	0%, 100%{
 		width: 0;
 	}
 
-	20, 80%{
-		width: 6.4em;
+	20%, 80%{
+		width: 7.4rem;
 	}
 }
 
 @keyframes caret{
-	0, 100%{
+	0%, 100%{
 		opacity: 0;
 	}
 
