@@ -18,31 +18,34 @@ mosaic-assets:
 
 creators:
   - name: Carlos
-    photo-1: "assets/pp-carlos-1.png"
-    photo-2: "assets/pp-carlos-2.png"
-    photo-3: "assets/pp-carlos-3.png"
-    desc: Designer
+    photo-1: "assets/pp-carlos-1.jpg"
+    photo-2: "assets/pp-carlos-2.jpg"
+    photo-3: "assets/pp-carlos-3.jpg"
+    desc: Digital Communication Specialist
     full-name: Carlos Entrena
     email: caentrena@gmail.com
-    linkedin: ""
-    href: ""
+    linkedin: "https://www.linkedin.com/in/carlosentrena/"
+    medium: "https://medium.com/@carlosentrena"
+    href: "https://www.linkedin.com/in/carlosentrena/"
 
   - name: Davor
-    photo-1: "assets/pp-davor-1.png"
-    photo-2: "assets/pp-davor-2.png"
-    photo-3: "assets/pp-davor-3.png"
-    desc: Designer
+    photo-1: "assets/pp-davor-1.jpg"
+    photo-2: "assets/pp-davor-2.jpg"
+    photo-3: "assets/pp-davor-3.jpg"
+    desc: Data Scientist
     full-name: Davor Ljubenkov
     email: dljubenk@gmail.com
-    linkedin: 
-    href: 
+    linkedin: "https://www.linkedin.com/in/dljubenk/"
+    medium: "" 
+    href: "https://dljubenk.github.io/"
 
   - name: Reza
-    photo-1: "assets/pp-reza-1.png"
-    photo-2: "assets/pp-reza-2.png"
-    photo-3: "assets/pp-reza-3.png"
-    desc: Designer
+    photo-1: "assets/pp-reza-1.jpg"
+    photo-2: "assets/pp-reza-2.jpg"
+    photo-3: "assets/pp-reza-3.jpg"
+    desc: Design Technologist
     full-name: Reza Arkan
     email: rezaarkan@gmail.com
-    linkedin: 
+    linkedin: "https://www.linkedin.com/in/rezaarkan/"
+    medium: ""
     href: "https://rezaarkan.com"
