@@ -106,21 +106,24 @@
 				{% for creator in site.data.general.creators %}
 				<div class="item media-large">
 					<div class="photo">
-						<div class="cover">
+						<a href="{{ creator.href }}" target="_blank" class="cover">
 							<img src={{ creator.photo-2 }}>
-						</div>
+						</a>
 						<img src={{ creator.photo-1 }}>
 					</div>
 					<div class="text">
-						<h3>{{ creator.name }}</h3>
-						<p>{{ creator.desc }}</p>
+						<h3>{{ creator.full-name }}</h3>
+						<span>{{ creator.desc }}</span>
 					</div>
 				</div>
 				<div class="item media-small">
-					<div class="details">
-						<h3>{{ creator.name }}</h3>
+					<div class="item-container">
+						<div class="details">
+							<h3>{{ creator.name }}</h3>
+							<span>{{ creator.desc }}</span>
+						</div>
+						<img src={{ creator.photo-3 }}>
 					</div>
-					<img src={{ creator.photo-2 }}>
 				</div>
 				{% endfor %}
 			</div>

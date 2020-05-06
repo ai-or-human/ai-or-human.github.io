@@ -102,13 +102,38 @@ function displayResult(){
   loadResultData(function(object){
     resultObject = object;
 
+    var resultTotalAnswered = resultObject.total.answered;
+    var resultTotalCorrect = resultObject.total.correct || 0;
+    var resultTotalWrong = resultObject.total.wrong || 0;
+
+    db.ref(dbOverviewPath + 'total/answersCompleted/answers').transaction(function(counter){
+      if (counter == null) {
+        return resultTotalAnswered;
+      } else {
+        return counter + resultTotalAnswered;
+      }
+    })
+
+    db.ref(dbOverviewPath + 'total/answersCompleted/correct').transaction(function(counter){
+      if (counter == null) {
+        return resultTotalCorrect;
+      } else {
+        return counter + resultTotalCorrect;
+      }
+    })
+
+    db.ref(dbOverviewPath + 'total/answersCompleted/wrong').transaction(function(counter){
+      if (counter == null) {
+        return resultTotalWrong;
+      } else {
+        return counter + resultTotalWrong;
+      }
+    }) 
+
     loadOverviewData(function(object){
       overviewObject = object;
 
       var questionIndex = 0;
-
-      var resultTotalAnswered = resultObject.total.answered;
-      var resultTotalCorrect = resultObject.total.correct || 0;
 
       var overviewImageAnswers = overviewObject.perContentType.image.answers;
       var overviewImageCorrect = overviewObject.perContentType.image.correct || 0;
@@ -121,8 +146,8 @@ function displayResult(){
 
       var overviewParticipants = overviewObject.total.participants.completed;
 
-      var overviewAnswers = overviewObject.total.answers.answers;
-      var overviewCorrect = overviewObject.total.answers.correct;
+      var overviewAnswers = overviewObject.total.answersCompleted.answers;
+      var overviewCorrect = overviewObject.total.answersCompleted.correct;
       var overviewAvgResult = (overviewCorrect/overviewParticipants).toFixed(0);
 
       var overviewImageAnswers = overviewObject.perContentType.image.answers;
