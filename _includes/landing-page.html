@@ -32,7 +32,7 @@
 		<div class="hero wrapper">
 			<div class="highlight-container media-large">
 				<div class="highlight">
-					{% for item in site.data.materials.landing-page %}
+					{% for item in site.data.general.mosaic-assets %}
 					<div class="item">
 						<div class="cover">
 							<span>Human?</span>
@@ -59,7 +59,7 @@
 	<section class="section-highlight media-small">
 		<div class="highlight-container">
 			<div class="highlight">
-				{% for item in site.data.materials.landing-page %}
+				{% for item in site.data.general.mosaic-assets %}
 				<div class="item">
 					<div class="cover">
 						<span>Human?</span>
@@ -103,42 +103,26 @@
 				<h2>Mostly humans</h2>
 			</div>
 			<div class="creators-container">
-				<div class="item">
+				{% for creator in site.data.general.creators %}
+				<div class="item media-large">
 					<div class="photo">
-						<img src="assets/materials/images/4532.jpg">
+						<div class="cover">
+							<img src={{ creator.photo-2 }}>
+						</div>
+						<img src={{ creator.photo-1 }}>
 					</div>
 					<div class="text">
-						<h3>Name</h3>
-						<p>Description</p>
+						<h3>{{ creator.name }}</h3>
+						<p>{{ creator.desc }}</p>
 					</div>
 				</div>
-				<div class="item">
-					<div class="photo">
-						<img src="assets/materials/images/4532.jpg">
+				<div class="item media-small">
+					<div class="details">
+						<h3>{{ creator.name }}</h3>
 					</div>
-					<div class="text">
-						<h3>Name</h3>
-						<p>Description</p>
-					</div>
+					<img src={{ creator.photo-2 }}>
 				</div>
-				<div class="item">
-					<div class="photo">
-						<img src="assets/materials/images/4532.jpg">
-					</div>
-					<div class="text">
-						<h3>Name</h3>
-						<p>Description</p>
-					</div>
-				</div>
-				<div class="item">
-					<div class="photo">
-						<img src="assets/materials/images/4532.jpg">
-					</div>
-					<div class="text">
-						<h3>Name</h3>
-						<p>Description</p>
-					</div>
-				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</section>

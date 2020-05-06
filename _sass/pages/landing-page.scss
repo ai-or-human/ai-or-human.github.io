@@ -372,12 +372,11 @@
 
 				width: 100%;
 
-				.item{
+				.item.media-large{
+					position: relative;
 					flex: auto;
 
 					width: 100%;
-
-					margin: 1.5rem 0 0 0;
 
 					@include respond-at($bp-small-3){
 						width: auto;
@@ -393,8 +392,34 @@
 						margin-right: 0;
 					}
 
+					.cover{
+						position: absolute;
+						top: 0;
+						left: 0;
+
+						width: 100%;
+						height: 100%;
+
+						opacity: 0;
+
+						border-radius: 5%;
+						overflow: hidden;
+
+						background: $clr-accent;
+
+						img{
+							width: 100%;
+						}
+
+						&:hover{
+							opacity: 1;
+						}
+					}
+
 					.photo{
 						display: inline-block;
+
+						position: relative;
 
 						width: 8rem;
 
@@ -408,6 +433,42 @@
 						img{
 							width: 100%;
 						}
+					}
+				}
+
+				.item.media-small{
+					position: relative;
+					flex: auto;
+
+					width: 100%;
+					height: 10rem;
+
+					margin-top: 1.5rem;
+
+					border-radius: 0.75rem;
+
+					overflow: hidden;
+
+					justify-content: center;
+					align-items: center;
+
+					.details{
+						position: absolute;
+
+						padding: 1rem;
+
+						color: white;
+						text-align: left;
+
+						h3{
+							font-size: 3rem;
+							margin-bottom: 0;
+						}
+					}
+
+					img{
+						min-height: 100%;
+						width: 100%;
 					}
 				}
 			}
