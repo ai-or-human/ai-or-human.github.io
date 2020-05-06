@@ -18,10 +18,19 @@ function initDB()
 
 function initQuiz(){
   var currentPage = $("#page"+page);
+  var mosaic = $(".highlight-container.media-large .item");
 
   $('.page.load').removeClass('load');
 
   currentPage.addClass('show');
+
+  for(var i = 0; i < mosaic.length; i++){
+    var target = Math.floor(Math.random() * mosaic.length -1) + 1;
+    var target2 = Math.floor(Math.random() * mosaic.length -1) +1;
+    mosaic.eq(target).before(mosaic.eq(target2));
+  }
+
+  randomizePage();
 
   page++;
 
@@ -55,6 +64,10 @@ function nextPage(button){
       }
     })
   }
+
+  $("#page"+page+" .question-title").each(function(){
+    $(this).text("Question "+page);
+  })
 
   collectAndSendInputs(page, button);
 
@@ -280,6 +293,24 @@ function randomizeContent(page) {
       randomContent[i].remove();
     }
   }
+}
+
+function randomizePage(){
+  var pages = $('.page[value="question"]');
+  var num = 1;
+
+  for(var i = 0; i < pages.length; i++){
+    var target = Math.floor(Math.random() * pages.length -1) + 1;
+    var target2 = Math.floor(Math.random() * pages.length -1) +1;
+    pages.eq(target).before(pages.eq(target2));
+  }
+
+  pages = $('.page[value="question"]');
+
+  pages.each(function(){
+    $(this).attr("id","page"+num);
+    num++
+  })
 }
 
 function collectAndSendInputs(page, button) {

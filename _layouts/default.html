@@ -6,7 +6,7 @@
 <body onload="start()">
   <div>
     {% for page in site.pages %}
-    <section id="page{{page.pageNo}}" class="page">
+    <section id="page{{page.pageNo}}" class="page" value="{{ page.layout }}">
       {% if page.layout == "landing-page" %}
       {% include landing-page.html %}
       {% endif %}

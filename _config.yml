@@ -14,7 +14,7 @@
 title: AI or Human?
 email: reza@rezaarkan.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A description for your survey
+  Play the game and try to guess the difference between what is AI or Human.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 

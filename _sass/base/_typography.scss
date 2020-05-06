@@ -1,20 +1,28 @@
 h1{
-	font-size: 2.5rem;
+	font-size: 2rem;
 	line-height: 1.375;
 	font-weight: bold;
 	color: $clr-text-primary;
 
 	@include respond-at($bp-large){
+		font-size: 2.5rem;
+	}
+
+	@include respond-at($bp-xl){
 		font-size: 3.5rem;
 	}
 }
 
 h2{
-	font-size: 1.875rem;
+	font-size: 1.625rem;
 	font-weight: bold;
 	color: $clr-text-primary;
 
 	@include respond-at($bp-large){
+		font-size: 1.875rem;
+	}
+
+	@include respond-at($bp-xl){
 		font-size: 2rem;
 	}
 }
@@ -55,13 +63,24 @@ a{
 	text-transform: uppercase;
 }
 
-.lead{
+.text-lead{
 	font-size: 1.125rem;
 	font-weight: lighter;
 	color: $clr-text-primary;
 	line-height: 1.75;
 
-	@include respond-at($bp-large){
+	@include respond-at($bp-xl){
 		font-size: 1.375rem;
+	}
+}
+
+.text-small{
+	font-size: 0.75rem;
+	line-height: 2;
+	font-weight: lighter;
+	color: $clr-text-primary;
+
+	@include respond-at($bp-large){
+		font-size: 0.875rem;
 	}
 }
