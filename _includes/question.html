@@ -10,12 +10,12 @@
 			</div>
 			{% if include.type == "image" %}
 				<div class="question-title image">
-					<span>{{ include.question-title }}</span>
+					<span></span>
 				</div>
 			{% endif %}
 			{% if include.type == "text" %}
 			<div class="question-title text">
-				<span>{{ include.question-title }}</span>
+				<span></span>
 			</div>
 			{% endif %}
 		</div>
@@ -25,9 +25,9 @@
 		{% if include.type == "image" %}
 			<div class="image-container">
 				<div class="image randomize">
-					<img class="random" src={{ content-set.src-1 }} id={{ content-set.image-id-1 }} question={{ content-set.question-id }}>
-					<img class="random" src={{ content-set.src-2 }} id={{ content-set.image-id-2 }} question={{ content-set.question-id }}>
-					<img class="random" src={{ content-set.src-3 }} id={{ content-set.image-id-3 }} question={{ content-set.question-id }}>
+					{% for image in content-set.image %}
+					<img class="random" src={{ image.src }} id={{ image.id }} question={{ content-set.question-id }}>
+					{% endfor %}
 				</div>
 			</div>
 		{% endif %}
@@ -35,22 +35,16 @@
 		{% if include.type == "text" %}
 			<div class="text-container">
 				<div class="text randomize">
-					<div class ="random" id={{ content-set.text-id-1 }} question={{ content-set.question-id }}>
+					{% for text in content-set.text %}
+					<div class ="random" id={{ text.id }} question={{ content-set.question-id }}>
 						<div class="text-title">
-							<span>{{ content-set.title-1 }}</span>
+							<span>{{ text.title }}</span>
 						</div>
 						<div class="text-content">
-							<span>{{ content-set.content-1 }}</span>
+							<span>{{ text.content }}</span>
 						</div>
 					</div>
-					<div class ="random" id={{ content-set.text-id-2 }} question={{ content-set.question-id }}>
-						<div class="text-title">
-							<span>{{ content-set.title-2 }}</span>
-						</div>
-						<div class="text-content">
-							<span>{{ content-set.content-2 }}</span>
-						</div>
-					</div>
+					{% endfor %}
 				</div>
 			</div>
 		{% endif %}
@@ -58,7 +52,7 @@
 	<div class="section-question">
 		<div class="content">
 			<div class="question-title media-large">
-				<span>{{ include.question-title }}</span>
+				<span></span>
 			</div>
 			<div class="question-text media-large">
 				<span>{{ include.question-text }}</span>

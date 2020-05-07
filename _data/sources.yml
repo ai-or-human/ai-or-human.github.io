@@ -98,15 +98,160 @@
 
 8749:
   href:
-    - ""
+    - "https://unsplash.com/photos/8PMvB4VyVXA"
   text:
-    - ""
+    - "Unsplash"
 
 5625:
   href:
     - "https://www.pexels.com/photo/close-up-photo-of-man-3127364/"
   text:
     - "Pexels"
+
+4444:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+2012:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+9082:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+8988:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+1208:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+4628:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+2476:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+9734:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+6666:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+6478:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+8098:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+7894:
+  href:
+    - "https://thispersondoesnotexist.com/"
+  text:
+    - "thispersondoesnotexist.com"
+
+7861:
+  href:
+    - "https://unsplash.com/photos/EGVccebWodM"
+  text:
+    - "Unsplash"
+
+1291:
+  href:
+    - "https://unsplash.com/photos/rDEOVtE7vOs"
+  text:
+    - "Unsplash"
+
+5461:
+  href:
+    - "https://www.pexels.com/photo/woman-holding-disposable-cup-712513/"
+  text:
+    - "Pexels"
+
+6739:
+  href:
+    - "https://www.pexels.com/photo/woman-wearing-white-sleeveless-shirt-and-white-denim-shorts-1082962/"
+  text:
+    - "Pexels"
+
+9099:
+  href:
+    - "https://www.pexels.com/photo/photography-of-a-beautiful-woman-smiling-1024311/"
+  text:
+    - "Pexels"
+
+5553:
+  href:
+    - "https://www.pexels.com/photo/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-photo-736716/"
+  text:
+    - "Pexels"
+
+7771:
+  href:
+    - "https://www.pexels.com/photo/women-s-white-and-black-button-up-collared-shirt-774909/"
+  text:
+    - "Pexels"
+
+4567:
+  href:
+    - "https://unsplash.com/photos/ROJFuWCsfmA"
+  text:
+    - "Unsplash"
+
+8901:
+  href:
+    - "https://unsplash.com/photos/nd0AqhGk5ZI"
+  text:
+    - "Unsplash"
+
+3975:
+  href:
+    - "https://unsplash.com/photos/c_GmwfHBDzk"
+  text:
+    - "Unsplash"
+
+3783:
+  href:
+    - "https://unsplash.com/photos/pg_WCHWSdT8"
+  text:
+    - "Unsplash"
+
+1111:
+  href:
+    - "https://unsplash.com/photos/mjRwhvqEC0U"
+  text:
+    - "Unsplash"
+
 
 #Text
 
@@ -137,3 +282,45 @@
     - "https://www.theguardian.com/world/2020/apr/10/tech-giants-struggle-stem-infodemic-false-coronavirus-claims"
   text:
     - "The Guardian"
+
+6664:
+  href:
+    - "https://www.theverge.com/2019/2/21/18234500/ai-ethics-debate-researchers-harmful-programs-openai"
+    - "https://talktotransformer.com/"
+  text:
+    - "The Verge"
+    - "Talk to Transformer"
+
+5555:
+  href:
+    - "https://www.theguardian.com/technology/2018/nov/12/deep-fakes-fake-news-truth"
+  text:
+    - "The Guardian"
+
+8944:
+  href:
+    - "https://www.theverge.com/2018/9/11/17844164/mark-zuckerberg-democracy-interviews-tech-ceo"
+    - "https://talktotransformer.com/"
+  text:
+    - "The Verge"
+    - "Talk to Transformer"
+
+7078:
+  href:
+    - "https://www.nytimes.com/2019/12/20/business/facebook-ai-generated-profiles.html"
+    - "https://talktotransformer.com/"
+  text:
+    - "The New York Times"
+    - "Talk to Transformer"
+
+6531:
+  href:
+    - "https://www.theverge.com/2020/5/6/21249497/fortnite-350-million-registered-players-hours-played-april"
+  text:
+    - "The Verge"
+
+1239:
+  href:
+    - "https://www.theverge.com/2020/4/30/21243321/disney-animated-hercules-live-action-reboot-russo-brothers"
+  text:
+    - "The Verge"

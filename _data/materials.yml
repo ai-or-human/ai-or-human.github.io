@@ -1,108 +1,218 @@
 imageset-1:
   question-id: 12876532
   validity: generated-by-AI
+  image:
+    - id: 2222
+      src: "assets/materials/images/2222.jpg"
 
-  image-id-1: 2222
-  src-1: "assets/materials/images/2222.jpg"
+    - id: 4532
+      src: "assets/materials/images/4532.jpg"
 
-  image-id-2: 4532
-  src-2: "assets/materials/images/4532.jpg"
+    - id: 9806
+      src: "assets/materials/images/9806.jpg"
 
-  image-id-3: 9806
-  src-3: "assets/materials/images/9806.jpg"
+    - id: 2012
+      src: "assets/materials/images/2012.jpg"
+
+    - id: 9082
+      src: "assets/materials/images/9082.jpg"
+
+    - id: 8988
+      src: "assets/materials/images/8988.jpg"
 
 imageset-2:
   question-id: 78935641
   validity: by-humans
+  image:
+    - id: 6745
+      src: "assets/materials/images/6745.jpg"
 
-  image-id-1: 6745
-  src-1: "assets/materials/images/6745.jpg"
+    - id: 9843
+      src: "assets/materials/images/9843.jpg"
 
-  image-id-2: 9843
-  src-2: "assets/materials/images/9843.jpg"
+    - id: 2985
+      src: "assets/materials/images/2985.jpg"
 
-  image-id-3: 2985
-  src-3: "assets/materials/images/2985.jpg"
+    - id: 7771
+      src: "assets/materials/images/7771.jpg"
+
+    - id: 4567
+      src: "assets/materials/images/4567.jpg"
+
+    - id: 7861
+      src: "assets/materials/images/7861.jpg"
 
 imageset-3:
   question-id: 90745389
   validity: by-humans
+  image:
+    - id: 7811
+      src: "assets/materials/images/7811.jpg"
 
-  image-id-1: 7811
-  src-1: "assets/materials/images/7811.jpg"
+    - id: 3521
+      src: "assets/materials/images/3521.jpg"
 
-  image-id-2: 3521
-  src-2: "assets/materials/images/3521.jpg"
+    - id: 9833
+      src: "assets/materials/images/9833.jpg"
 
-  image-id-3: 9833
-  src-3: "assets/materials/images/9833.jpg"
+    - id: 5553
+      src: "assets/materials/images/5553.jpg"
+
+    - id: 8901
+      src: "assets/materials/images/8901.jpg"
+
+    - id: 1111
+      src: "assets/materials/images/1111.jpg"
 
 imageset-4:
   question-id: 45371098
   validity: generated-by-AI
+  image:
+    - id: 6472
+      src: "assets/materials/images/6472.jpg"
 
-  image-id-1: 6472
-  src-1: "assets/materials/images/6472.jpg"
+    - id: 7298
+      src: "assets/materials/images/7298.jpg"
 
-  image-id-2: 7298
-  src-2: "assets/materials/images/7298.jpg"
+    - id: 9382
+      src: "assets/materials/images/9382.jpg"
 
-  image-id-3: 9382
-  src-3: "assets/materials/images/9382.jpg"
+    - id: 1208
+      src: "assets/materials/images/1208.jpg"
+
+    - id: 4628
+      src: "assets/materials/images/4628.jpg"
+
+    - id: 2476
+      src: "assets/materials/images/2476.jpg"
 
 imageset-5:
   question-id: 67482892
   validity: generated-by-AI
+  image:
+    - id: 7820
+      src: "assets/materials/images/7820.jpg"
 
-  image-id-1: 7820
-  src-1: "assets/materials/images/7820.jpg"
+    - id: 4672
+      src: "assets/materials/images/4672.jpg"
 
-  image-id-2: 4672
-  src-2: "assets/materials/images/4672.jpg"
+    - id: 9858
+      src: "assets/materials/images/9858.jpg"
 
-  image-id-3: 9858
-  src-3: "assets/materials/images/9858.jpg"
+    - id: 9734
+      src: "assets/materials/images/9734.jpg"
+
+    - id: 6666
+      src: "assets/materials/images/6666.jpg"
+
+    - id: 4444
+      src: "assets/materials/images/4444.jpg"
 
 imageset-6:
   question-id: 78477819
   validity: by-humans
+  image:
+    - id: 1231
+      src: "assets/materials/images/1231.jpg"
 
-  image-id-1: 1231
-  src-1: "assets/materials/images/1231.jpg"
+    - id: 8749
+      src: "assets/materials/images/8749.jpg"
 
-  image-id-2: 8749
-  src-2: "assets/materials/images/8749.jpg"
+    - id: 5625
+      src: "assets/materials/images/5625.jpg"
 
-  image-id-3: 5625
-  src-3: "assets/materials/images/5625.jpg"
+    - id: 9099
+      src: "assets/materials/images/9099.jpg"
+
+    - id: 3975
+      src: "assets/materials/images/3975.jpg"
+
+    - id: 3783
+      src: "assets/materials/images/3783.jpg"
+
+imageset-7:
+  question-id: 99999999
+  validity: wildcard
+  image:
+    - id: 6478
+      src: "assets/materials/images/6478.jpg"
+
+    - id: 8098
+      src: "assets/materials/images/8098.jpg"
+
+    - id: 7894
+      src: "assets/materials/images/7894.jpg"
+
+    - id: 1291
+      src: "assets/materials/images/1291.jpg"
+
+    - id: 5461
+      src: "assets/materials/images/5461.jpg"
+
+    - id: 6739
+      src: "assets/materials/images/6739.jpg"
 
 textset-1:
   question-id: 78378392
   validity: generated-by-AI
-  text-id-1: 6732
-  title-1: "Shifting guidelines on coronavirus treatment in US could be ‘catastrophic’"
-  content-1: "In countries where coronaviruses cause disease, there is increasing support for putting an end to the use of experimental antiviral drugs. Some specialist groups fear that this will mean a shift in guidelines that could be catastrophic for those on the frontline.
+  text:
+    - id: 6732
+      title: "Shifting guidelines on coronavirus treatment in US could be ‘catastrophic’"
+      content: "In countries where coronaviruses cause disease, there is increasing support for putting an end to the use of experimental antiviral drugs. Some specialist groups fear that this will mean a shift in guidelines that could be catastrophic for those on the frontline.
   As a result, they are asking the public to step up and show their concerns in a public petition: https://petition.parliament.uk/petitions/6811/release-the-carcass-specimens-for-the-science-community"
 
-  text-id-2: 3564
-  title-2: "'We'll disappear': Thousands of Mexican women strike to protest femicide in Mexico"
-  content-2: "More than 500,000 people attended rallies across Mexico on Saturday to denounce violence against women, in a demonstration that also called for the law to be modified.
+    - id: 3564
+      title: "'We'll disappear': Thousands of Mexican women strike to protest femicide in Mexico"
+      content: "More than 500,000 people attended rallies across Mexico on Saturday to denounce violence against women, in a demonstration that also called for the law to be modified.
   Women marched alongside men calling for a constitutional reform to prevent violence against women, and staged marches of their own.
   The gathering of marches marked International Women's Day, a day on which women's rights advocates work to highlight gender discrimination."
+
+    - id: 6664
+      title: "AI researchers debate the ethics of sharing potentially harmful programs"
+      content: "Noonan also went on to argue that AI is more than a buzzword, explaining that 'programs are not neutral; they have effects.' Because of the importance of ethics in AI research, she argued that 'no one ever sat down and wrote a paper' on the topic. It is important to note that Noonan is fully aware that she is the embodiment of what she is not: a hacker. As such, she makes no mention of her nature when she talks about research ethics, presumably because she knows she will not get into trouble if she fails to do so."
 
 textset-2:
   question-id: 56438901
   validity: by-humans
-  text-id-1: 5561
-  title-1: "Barcelona to play Napoli behind closed doors amid coronavirus fears"
-  content-1: "Barcelona’s Champions League last-16 second leg match with Napoli, scheduled for 18 March, will take place without spectators due to fears over the spread of the coronavirus, a club spokesman said on Tuesday.
+  text:
+    - id: 5561
+      title: "Barcelona to play Napoli behind closed doors amid coronavirus fears"
+      content: "Barcelona’s Champions League last-16 second leg match with Napoli, scheduled for 18 March, will take place without spectators due to fears over the spread of the coronavirus, a club spokesman said on Tuesday.
   The match – which will take place at Camp Nou after a 1-1 draw in Naples – is the latest Champions League fixture to be affected by the spread of the virus, with Paris Saint-Germain’s Wednesday return with Borussia Dortmund set to go ahead without supporters, as will Tuesday’s match between Valencia and Atalanta."
 
-  text-id-2: 3901 
-  title-2: "Tech giants struggle to stem 'infodemic' of false coronavirus claims"
-  content-2: "Click over to Google, type in “coronavirus”, and press enter.
+    - id: 3901 
+      title: "Tech giants struggle to stem 'infodemic' of false coronavirus claims"
+      content: "Click over to Google, type in “coronavirus”, and press enter.
   The results you see will bear little resemblance to any other search.
   There are no ads, no product recommendations, and no links to websites that have figured out how to win the search engine optimisation game. Government, NGO and mainstream media sources dominate.
   Algorithms and user-generated content are out; gatekeepers and fact checking are in.
   Silicon Valley has responded to the “infodemic” with aggressive intervention and an embrace of official sources and traditional media outlets.
   Across the social web – on Facebook, Twitter, YouTube, Reddit, Instagram and Pinterest – search results related to Covid-19 are similarly predetermined."
+
+    - id: 5555
+      title: "You thought fake news was bad? Deep fakes are where truth goes to die"
+      content: "In May, a video appeared on the internet of Donald Trump offering advice to the people of Belgium on the issue of climate change. “As you know, I had the balls to withdraw from the Paris climate agreement,” he said, looking directly into the camera, “and so should you.”
+      The video was created by a Belgian political party, Socialistische Partij Anders, or sp.a, and posted on sp.a’s Twitter and Facebook. It provoked hundreds of comments, many expressing outrage that the American president would dare weigh in on Belgium’s climate policy."
+
+textset-3:
+  question-id: 00000000
+  validity: wildcard
+  text:
+    - id: 8944
+      title: "We won’t find out if Mark Zuckerberg can fix Facebook by asking him"
+      content: "We won’t find out if Mark Zuckerberg can fix Facebook by asking him. People run companies because they love to run them, and hate to lose them. For that reason, it will be up to the users to make Zuckerberg's choices in the long run.
+      Given Mark Zuckerberg's experience with Instagram, I'm not sure if his fast rise is going to last the way he hopes. The company is beginning to see the financial fruits of its social network, but its entire business model may not be sustainable. Investors may soon decide they have had enough."
+
+    - id: 7078
+      title: "Facebook Discovers Fakes That Show Evolution of Disinformation"
+      content: "During a tour around the world to spread the word about my new book, Modern Machinations, I wanted to give the idea that fake-news has been developed and spread by sophisticated entities, because I have been trying to defend it from 'not-so-innocent' online and commercial interests that are spending big bucks. But why would anyone become an accomplice to fake news when you could just get it by being simple and self-reliant? Like news itself, fake news is something we can't really do anything about; we are not internet-savvy enough to know that if we are to get our heads around it, we need to go ahead and do our own investigation."
+
+    - id: 6531
+      title: "Fortnite is now one of the biggest games ever with 350 million players"
+      content: "Epic’s Fortnite has more than 350 million registered players, the game developer announced on Wednesday. That makes the free-to-play battle royale game one of the most popular titles ever made, ranking up there with the ubiquity of Minecraft and some of the most downloaded mobile and free-to-play PC games of the last 15 years. While we have no indication as to how many players log in every day or month, as Epic doesn’t release those stats, the studio did say that in April alone, players logged 3.2 billion hours of Fortnite.
+      The last player count stat we heard from Epic was about 250 million in March 2019, indicating that the game is still growing a year later and more than two and a half years after its initial release. That’s partly due to the game being so readily available on all platforms — PC, console, and mobile — and because Epic continues to update it constantly."
+
+    - id: 1239
+      title: "Disney’s animated Hercules is getting a live-action reboot produced by the Russo brothers"
+      content: "Disney’s live-action remakes are on a roll, and news of yet another project broke today: a version of the 1997 Hercules movie, produced (but not directed) by Joe and Anthony Russo of Marvel’s Avengers fame, via The Hollywood Reporter.
+      Also attached to the project is Dave Callaham, who worked on The Expendables films, wrote the screenplay for the upcoming Shang-Chi and the Legend of the Ten Rings, and worked as a co-writer on Wonder Woman 1984."
