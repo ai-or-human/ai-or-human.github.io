@@ -13,12 +13,14 @@
 
 @import
 	'components/_scaffolding',
-	'components/_navbar';
+	'components/_navbar',
+	'components/_footer';
 
 @import
 	'layout/_default';
 
 @import
 	'pages/landing-page',
+	'pages/instructions',
 	'pages/results-page',
 	'pages/question';

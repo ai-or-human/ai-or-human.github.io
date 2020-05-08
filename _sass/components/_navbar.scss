@@ -41,12 +41,12 @@
 		vertical-align: middle;
 
 		.title{
-			font-size: 1rem;
-			text-transform: uppercase;
-			color: white;
-			font-weight: bold;
 
 			span{
+				font-size: 1rem;
+				text-transform: uppercase;
+				color: white;
+				font-weight: bold;
 				padding: 0.2rem 0.4rem;
 
 				background: $clr-accent;
@@ -71,6 +71,10 @@
 
 			&:last-child{
 				margin-right: 0.5rem;
+			}
+
+			a{
+				text-decoration: none;
 			}
 		}
 	}

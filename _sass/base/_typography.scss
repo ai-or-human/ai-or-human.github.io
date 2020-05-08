@@ -40,11 +40,11 @@ p{
 
 a{
 	color: $clr-text-secondary;
-	text-decoration: none;
+	text-decoration: underline;
 
 	&:hover{
 		color: $clr-text-secondary;
-		text-decoration: none;
+		text-decoration: underline;
 
 		opacity: 0.8;
 

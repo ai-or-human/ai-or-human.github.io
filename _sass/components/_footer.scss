@@ -1,0 +1,22 @@
+.footer{
+	background: $clr-footer;
+
+	text-align: center;
+
+	.wrapper{
+		padding: 1rem 0;
+	}
+
+	span{
+		color: white;
+		font-size: 0.75rem;
+	}
+
+	a{
+		color: white;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

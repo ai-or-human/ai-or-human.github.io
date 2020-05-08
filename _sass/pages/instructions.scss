@@ -1,4 +1,4 @@
-.page-question{
+.page-instructions{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -209,10 +209,9 @@
 			}
 
 			.text-content{
-				font-size: 1rem;
-				line-height: 1.8rem;
-
-				overflow-x: hidden;
+				p{
+					font-size: 1rem;
+				}
 			}
 		}
 	}
@@ -247,7 +246,7 @@
 
 			text-align: center;
 
-			background-color: white;
+			background-color: $clr-accent;
 
 			border-radius: 1rem;
 			box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
@@ -255,7 +254,7 @@
 			@include respond-at($bp-large){
 				display: inline-block;
 
-				margin: 30% 5% 0 0;
+				margin: 35% 5% 0 0;
 
 				background: none;
 
@@ -263,7 +262,7 @@
 				box-shadow: none;
 
 				@include respond-at($bp-xl-2){
-					margin: 32.5% 15% 0 0;
+					margin: 35% 15% 0 0;
 				}
 			}
 
@@ -281,7 +280,7 @@
 				display: inline-block;
 				width: 100%;
 
-				margin-top: 0.5rem;
+				margin: 0.5rem 0 3rem 0;
 				padding: 0 1.5rem;
 
 				font-size: 2rem;
@@ -310,7 +309,7 @@
 
 			position: relative;
 
-			width: 49%;
+			width: 100%;
 
 			padding: 0.75rem 1.5rem;
 
@@ -318,28 +317,25 @@
 
 			transition: 0.3s;
 
-			font-size: 2.5rem;
+			font-size: 1.5rem;
+			color: white;
+			font-weight: bold;
 
 			@include respond-at($bp-large){
 				width: auto;
 
 				margin-right: 0.5rem;
-				padding: 0.75rem 1.5rem;
+				padding: 0.5rem 2rem;
 
 				border-radius: 0.75rem;
 
-				font-size: 0.875rem;
+				font-size: 1.5rem;
 
-				@include respond-at($bp-xl){
-					margin-right: 1.5rem;
-					padding: 1rem 2rem;
-
-					font-size: 1rem;
-				}
+				background-color: $clr-accent;
 			}
 
 			&:hover{
-				background: rgba(62, 78, 134,0.1);
+				opacity: 0.9;
 			}
 
 			input[type=radio]{
@@ -356,10 +352,6 @@
 				opacity: 0;
 
 				transition: 0.3s;
-
-				&:checked ~ .answer{
-					border: 2px solid $clr-text-secondary;
-				}
 			}
 
 			.answer{
@@ -371,11 +363,6 @@
 				height: 100%;
 
 				border-radius: 0.75rem;
-
-				@include respond-at($bp-large){
-					border: 1px solid #BFC6E1;
-					border-radius: 0.75rem;
-				}
 			}
 
 			&:last-child{
