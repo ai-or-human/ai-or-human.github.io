@@ -37,7 +37,7 @@
 						<div class="cover">
 							<span>Human?</span>
 						</div>
-						<img src = {{ item }} >
+						<img src="" data-echo={{ item }}>
 					</div>
 					{% endfor %}
 				</div>
@@ -67,7 +67,7 @@
 					<div class="cover">
 						<span>Human?</span>
 					</div>
-					<img src = {{ item }} >
+					<img src="" data-echo={{ item }} >
 				</div>
 				{% endfor %}
 			</div>
@@ -110,9 +110,9 @@
 				<div class="item media-large">
 					<div class="photo">
 						<a href="{{ creator.href }}" target="_blank" class="cover">
-							<img src={{ creator.photo-3 }}>
+							<img src="" data-echo={{ creator.photo-3 }}>
 						</a>
-						<img src={{ creator.photo-1 }}>
+						<img src="" data-echo={{ creator.photo-1 }}>
 					</div>
 					<div class="text">
 						<h3>{{ creator.full-name }}</h3>
