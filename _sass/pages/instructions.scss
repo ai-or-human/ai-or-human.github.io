@@ -59,9 +59,7 @@
 				font-weight: bold;
 
 				span{
-					padding: 0 0.25rem;
-
-					background: $clr-accent;
+					font-size: 0.875rem;
 				}
 			}
 
@@ -95,63 +93,6 @@
 			position: relative;
 			width: 50%;
 			height: 100vh;
-		}
-
-		.image-container{
-			width: 100%;
-			height: 100%;
-
-			overflow: hidden;
-
-			@include respond-at($bp-large){
-				position: absolute;
-				right: 0;
-
-				width: auto;
-				height: auto;
-
-				margin: 10%;
-				padding: 2.5%;
-
-				background-color: white;
-
-				border-radius: 0.75rem;
-				box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
-
-				@include respond-at($bp-xl){
-					margin: 15%;
-				}
-			}
-
-			.image{
-				width: 100%;
-				height: 100%;
-
-				overflow: hidden;
-
-				@include respond-at($bp-large){
-					height: auto;
-					max-height: 560px;
-				}
-			}
-
-			img{
-				display: block;
-
-				margin: auto;
-
-				width: 100%;
-				min-height: 100%;
-
-				object-fit: cover;
-
-				@include respond-at($bp-large){
-					margin: 0;
-					
-					width: 100%;
-					height: auto;
-				}
-			}
 		}
 
 		.text-container{
@@ -292,16 +233,6 @@
 				}
 
 			}
-		}
-
-		.question{
-			margin-top: 1.25rem;
-
-			@include respond-at($bp-large){
-				margin-top: 3rem;
-			}
-
-			text-align: center;
 		}
 
 		.answer-container{

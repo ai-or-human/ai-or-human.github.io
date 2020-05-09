@@ -2,8 +2,6 @@ var page = 0;
 var startTime = new Date().toUTCString();
 var id = Math.floor(Math.random() * 10000);
 var db = null;
-var refEntry,
-    refOverviewParticipantsCounter;
 
 var dbEntryPath = 'survey-data-' + env + '/entries/entry_';
 var dbOverviewPath = 'survey-data-' + env + '/overview/';
@@ -11,9 +9,6 @@ var dbOverviewPath = 'survey-data-' + env + '/overview/';
 function initDB()
 {
   db = firebase.database();
-
-  refEntry = db.ref(dbEntryPath + id);
-  refOverviewParticipantsCounter = db.ref(dbOverviewPath + 'total/participants/started');
 }
 
 function initQuiz(){
@@ -40,7 +35,7 @@ function initQuiz(){
 function updateEntries(sendObject){
   var updates = {};
 
-  refEntry.update(sendObject) 
+  db.ref(dbEntryPath + id).update(sendObject);
 }
 
 function changePage(page){
@@ -56,7 +51,7 @@ function nextPage(button){
   var currentPage = $("#page"+page);
 
   if (page == 1){
-    refOverviewParticipantsCounter.transaction(function(countParticipants) {
+    db.ref(dbOverviewPath + 'total/participants/started').transaction(function(countParticipants) {
       if (countParticipants == null) {
         return 1;
       } else {

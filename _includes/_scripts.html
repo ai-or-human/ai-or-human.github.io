@@ -1,0 +1,15 @@
+{% include _lazyload.html %}
+
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+{% include _firebase.html %}
+
+{% include _variables.html %}
+
+{% if jekyll.environment == "production" %}
+<script defer src="js/app.min.js"></script>
+{% endif %}
+
+{% if jekyll.environment == "development" %}
+<script defer src="js/app.js"></script>
+{% endif %}
