@@ -324,3 +324,61 @@
     - "https://www.theverge.com/2020/4/30/21243321/disney-animated-hercules-live-action-reboot-russo-brothers"
   text:
     - "The Verge"
+
+6482:
+  href:
+    - "https://www.theguardian.com/lifeandstyle/2020/apr/10/expert-guide-to-painting-your-house-perfectly"
+    - "https://talktotransformer.com/"
+  text:
+    - "The Guardian"
+    - "Talk to Transformer"
+
+8792:
+  href:
+    - "https://www.theguardian.com/artanddesign/2020/apr/06/andy-warhol-take-a-virtual-tour-around-the-tate-modern-exhibition"
+    - "https://talktotransformer.com/"
+  text:
+    - "The Guardian"
+    - "Talk to Transformer"
+
+8888:
+  href:
+    - "https://www.theverge.com/2020/5/5/21248460/nasa-tom-cruise-movie-international-space-station"
+    - "https://talktotransformer.com/"
+  text:
+    - "The Verge"
+    - "Talk to Transformer"
+
+7777:
+  href:
+    - "https://www.theverge.com/2020/4/23/21233475/nasa-spacex-crew-dragon-falcon-9-florida-no-travel"
+  text:
+    - "The Verge"
+
+9741:
+  href:
+    - "https://www.nytimes.com/2019/11/24/technology/tech-companies-deepfakes.html"
+  text:
+    - "The New York Times"
+
+5691:
+  href:
+    - "https://www.theverge.com/2018/9/7/17829270/5g-phone-cell-mobile-network-hardware"
+  text:
+    - "The Verge"
+
+6462:
+  href:
+    - "https://www.theverge.com/2019/10/29/20938680/hbo-game-of-thrones-got-spinoff-canceled-pilot-george-r-r-martin"
+    - "https://talktotransformer.com/"
+  text:
+    - "The Verge"
+    - "Talk to Transformer"
+
+5451:
+  href:
+    - "https://www.theverge.com/2020/4/29/21241845/facebook-q1-2020-earnings-coronavirus-covid-19-daily-users-engagement-up"
+  text:
+    - "The Verge"
+
+

@@ -171,6 +171,20 @@ textset-1:
       title: "AI researchers debate the ethics of sharing potentially harmful programs"
       content: "Noonan also went on to argue that AI is more than a buzzword, explaining that 'programs are not neutral; they have effects.' Because of the importance of ethics in AI research, she argued that 'no one ever sat down and wrote a paper' on the topic. It is important to note that Noonan is fully aware that she is the embodiment of what she is not: a hacker. As such, she makes no mention of her nature when she talks about research ethics, presumably because she knows she will not get into trouble if she fails to do so."
 
+    - id: 6482
+      title: "Top coat: the expert guide to painting your house perfectly – from walls to floors to radiators."
+      content: "Our last house was primed and finished back in 2010 by a woman named Gwyneth Hilsenrath. She kept me up-to-date on her progress, and I was blown away. It's been five years since then, and I'm still amazed at how incredible her work looked when I first saw it. She has never been afraid to use the most cutting-edge techniques, and worked at it with extraordinary care and dedication. We're all so lucky to have had such a skilled, talented and gracious teacher"
+
+    - id: 8792
+      title: "Andy Warhol: Take a virtual tour around the Tate Modern exhibition"
+      content: "The record label, responsible for bringing the works of so many great artists to the world, will be auctioning off 4,000 works over the next week or so. A website is soon to go live, with auctions for the two works in the Milton Keynes museum, as well as others for the Tate, auctioneers Bonhams said.
+      'What they are going to do is we are going to auction hundreds of pieces from Tate Modern and I think the top end of the list is going to be pretty spectacular,' said Bryce Roberts, a spokesman for Bonhams.
+      'A lot of what we are looking at is the pioneering art of the 1930s"
+
+    - id: 8888
+      title: "Tom Cruise will work with NASA on first movie filmed in space, NASA says"
+      content: "Although no opening date has been set, Cruise is expected to return to the helm of 'Mission: Impossible' within a year of the release of 'Tomorrowland,' according to NASA. Launching from Kennedy Space Center's pad 39A, Cruise is set to return to the global screen in July, when 'Mission: Impossible III' is scheduled to arrive in theaters. 'I am extremely excited that our new 'Mission: Impossible' movie will be shot in space by NASA's most experienced crew, who have flown six of the most challenging missions on Earth,' Cruise said in a NASA statement."
+
 textset-2:
   question-id: 56438901
   validity: by-humans
@@ -194,6 +208,20 @@ textset-2:
       content: "In May, a video appeared on the internet of Donald Trump offering advice to the people of Belgium on the issue of climate change. “As you know, I had the balls to withdraw from the Paris climate agreement,” he said, looking directly into the camera, “and so should you.”
       The video was created by a Belgian political party, Socialistische Partij Anders, or sp.a, and posted on sp.a’s Twitter and Facebook. It provoked hundreds of comments, many expressing outrage that the American president would dare weigh in on Belgium’s climate policy."
 
+    - id: 7777
+      title: "NASA administrator urges people not to travel to Florida to watch historic SpaceX launch"
+      content: "At the end of May, NASA astronauts are slated to launch to space from the United States once again, after nearly a decade of launching on Russian rockets from Kazakhstan — but NASA does not want members of the public to travel to see the mission in person. NASA administrator Jim Bridenstine is urging people to stay home and watch the historic mission online because of safety concerns associated with the ongoing coronavirus pandemic.
+      “We are asking people to join us in this launch, but to do so from home,” NASA administrator Jim Bridenstine said during a press conference today on the agency’s response to the COVID-19 pandemic."
+
+    - id: 9741
+      title: "Internet Companies Prepare to Fight the ‘Deepfake’ Future"
+      content: "SAN FRANCISCO — Several months ago, Google hired dozens of actors to sit at a table, stand in a hallway and walk down a street while talking into a video camera. Then the company’s researchers, using a new kind of artificial intelligence software, swapped the faces of the actors. People who had been walking were suddenly at a table. The actors who had been in a hallway looked like they were on a street. Men’s faces were put on women’s bodies. Women’s faces were put on men’s bodies. In time, the researchers had created hundreds of so-called deepfake videos."
+
+    - id: 5691
+      title: "5G is almost here — here’s how everyone’s getting ready"
+      content: "5G is coming, and it’s going to have a massive impact on almost every facet of how we use technology, with faster speeds and lower latency theoretically opening up huge new frontiers in everything from smartphones to self-driving cars.
+      But the future of mobile networks isn’t here yet. And with something as complex as 5G, dozens of companies, carriers, and device manufacturers all need to work together for this kind of rollout to happen."
+
 textset-3:
   question-id: 22222222
   validity: wildcard
@@ -207,6 +235,13 @@ textset-3:
       title: "Facebook Discovers Fakes That Show Evolution of Disinformation"
       content: "During a tour around the world to spread the word about my new book, Modern Machinations, I wanted to give the idea that fake-news has been developed and spread by sophisticated entities, because I have been trying to defend it from 'not-so-innocent' online and commercial interests that are spending big bucks. But why would anyone become an accomplice to fake news when you could just get it by being simple and self-reliant? Like news itself, fake news is something we can't really do anything about; we are not internet-savvy enough to know that if we are to get our heads around it, we need to go ahead and do our own investigation."
 
+    - id: 6462
+      title: "HBO cancels its first planned Game of Thrones spinoff"
+      content: "HBO has canceled the first planned Game of Thrones spinoff — and renewed freshman comedy Silicon Valley.
+      Following its current fourth-quarter ratings, which the network said is the lowest it's seen in the network's history, HBO ordered the 10-episode project titled Thrones.
+      Westeros, a fictional continent in Westeros, was devastated by a magical fire and the Lords of Westeros, led by House Targaryen (house Stark), were overthrown.
+      The Eastwatch Inn — a storied inn in Kings Landing (the capital city of Westeros) — appeared to be an immediate focal point of the power struggle."
+
     - id: 6531
       title: "Fortnite is now one of the biggest games ever with 350 million players"
       content: "Epic’s Fortnite has more than 350 million registered players, the game developer announced on Wednesday. That makes the free-to-play battle royale game one of the most popular titles ever made, ranking up there with the ubiquity of Minecraft and some of the most downloaded mobile and free-to-play PC games of the last 15 years. While we have no indication as to how many players log in every day or month, as Epic doesn’t release those stats, the studio did say that in April alone, players logged 3.2 billion hours of Fortnite.
@@ -216,3 +251,8 @@ textset-3:
       title: "Disney’s animated Hercules is getting a live-action reboot produced by the Russo brothers"
       content: "Disney’s live-action remakes are on a roll, and news of yet another project broke today: a version of the 1997 Hercules movie, produced (but not directed) by Joe and Anthony Russo of Marvel’s Avengers fame, via The Hollywood Reporter.
       Also attached to the project is Dave Callaham, who worked on The Expendables films, wrote the screenplay for the upcoming Shang-Chi and the Legend of the Ten Rings, and worked as a co-writer on Wonder Woman 1984."
+
+    - id: 5451
+      title: "Facebook usage is surging, but the company warns it may be temporary"
+      content: "Facebook’s business is booming, thanks to worldwide shelter-in-place and quarantine orders due to the COVID-19 pandemic that have everyone using social networks and staring at screens far more than average.
+      The company, which reported first quarter earnings for 2020 on Wednesday, says “a record number of people” are using its services, primarily its Messenger and WhatsApp chat apps as well as Instagram. Last month, as the pandemic intensified, Facebook said it was seeing spikes of more than 50 percent on its messaging products and now logs about 700 million daily calls across Messenger and WhatsApp."
