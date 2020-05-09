@@ -114,14 +114,6 @@ function displayResult(){
     var resultTotalCorrect = resultObject.total.correct || 0;
     var resultTotalWrong = resultObject.total.wrong || 0;
 
-    if(env=="production"){
-      analytics.logEvent('completed', {
-        result: resultTotalCorrect+"/10",
-        correct: resultTotalCorrect,
-        wrong: resultTotalWrong
-      });
-    }
-
     db.ref(dbOverviewPath + 'total/answersCompleted/answers').transaction(function(counter){
       if (counter == null) {
         return resultTotalAnswered;
@@ -263,7 +255,7 @@ function displayResult(){
             }).appendTo(source);
           }
 
-          $result.find('div[data="percentage"] > span').text(questionContentPercentage + "% of users got it right")
+          $result.find('div[data="percentage"] > span').text(questionContentPercentage + "% of people guessed correctly from a total of " + questionContentAnswers + " answers")
 
           if (questionResult == "correct"){
             $result.find('div[data="result"] > svg[value="wrong"]').css("display","none");
