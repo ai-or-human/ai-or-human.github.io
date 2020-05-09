@@ -114,6 +114,14 @@ function displayResult(){
     var resultTotalCorrect = resultObject.total.correct || 0;
     var resultTotalWrong = resultObject.total.wrong || 0;
 
+    if(env=="production"){
+      analytics.logEvent('completed', {
+        result: resultTotalCorrect+"/10",
+        correct: resultTotalCorrect,
+        wrong: resultTotalWrong
+      });
+    }
+
     db.ref(dbOverviewPath + 'total/answersCompleted/answers').transaction(function(counter){
       if (counter == null) {
         return resultTotalAnswered;
