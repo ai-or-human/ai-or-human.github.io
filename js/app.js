@@ -321,6 +321,7 @@ function collectAndSendInputs(page, button) {
   var sendObject = {}
   var overviewQuestionObject = {};
   var currentPage = page-1;
+  var num = currentPage-2;
 
   //Question
   $('#page'+currentPage+' .question').each(function(){
@@ -344,10 +345,10 @@ function collectAndSendInputs(page, button) {
     $('input', question).each(function(){
       var input = $(this);
 
-      sendObject[answerPath + currentPage + "_" + dataQuestionId + '/' + input.attr("value")] = "false";
+      sendObject[answerPath + num + "_" + dataQuestionId + '/' + input.attr("value")] = "false";
 
       if (input = buttonClicked){
-        sendObject[answerPath + currentPage + "_" + dataQuestionId + '/' + input.attr("value")] = "true";
+        sendObject[answerPath + num + "_" + dataQuestionId + '/' + input.attr("value")] = "true";
 
         if (buttonClicked.attr("value") == "selectsAI" && dataContentId % 2 == 0){
           dataResult = "correct";
@@ -434,11 +435,11 @@ function collectAndSendInputs(page, button) {
     sendObject["startTime"] = startTime
     sendObject["completeTime"] = new Date().toUTCString();
 
-    sendObject[answerPath + currentPage + "_" + dataQuestionId + '/id'] = dataQuestionId;
-    sendObject[answerPath + currentPage + "_" + dataQuestionId + '/contentId'] = dataContentId;
-    sendObject[answerPath + currentPage + "_" + dataQuestionId + '/contentType'] = dataContentType;
-    sendObject[answerPath + currentPage + "_" + dataQuestionId + '/validity'] = dataValidity;
-    sendObject[answerPath + currentPage + "_" + dataQuestionId + '/result'] = dataResult;
+    sendObject[answerPath + num + "_" + dataQuestionId + '/id'] = dataQuestionId;
+    sendObject[answerPath + num + "_" + dataQuestionId + '/contentId'] = dataContentId;
+    sendObject[answerPath + num + "_" + dataQuestionId + '/contentType'] = dataContentType;
+    sendObject[answerPath + num + "_" + dataQuestionId + '/validity'] = dataValidity;
+    sendObject[answerPath + num + "_" + dataQuestionId + '/result'] = dataResult;
 
     updateEntries(sendObject);
 

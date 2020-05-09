@@ -1,8 +1,8 @@
 <div class="page-question">
 	<div class ="navbar media-small">
 		<a class="emoji-container" href="{{ site.baseurl }}">
-			<img class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png">
-			<img class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png">
+			<img alt="human-emoji" class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png">
+			<img alt="robot-emoji" class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png">
 		</a>
 		<div class="text-container">
 			<div class="title">
@@ -26,7 +26,7 @@
 			<div class="image-container">
 				<div class="image randomize">
 					{% for image in content-set.image %}
-					<img class="random" src="" data-echo={{ image.src }} id={{ image.id }} question={{ content-set.question-id }}>
+					<img class="random" src="" alt="" data-echo={{ image.src }} id={{ image.id }} question={{ content-set.question-id }}>
 					{% endfor %}
 				</div>
 			</div>

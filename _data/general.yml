@@ -21,31 +21,55 @@ creators:
     photo-1: "assets/pp-carlos-1.jpg"
     photo-2: "assets/pp-carlos-2.jpg"
     photo-3: "assets/pp-carlos-3.jpg"
-    desc: Digital Communication Specialist
+    desc: Digital Communication / IT / People
     full-name: Carlos Entrena
     email: caentrena@gmail.com
-    linkedin: "https://www.linkedin.com/in/carlosentrena/"
-    medium: "https://medium.com/@carlosentrena"
     href: "https://www.linkedin.com/in/carlosentrena/"
+    links:
+      - href: "mailto:caentrena@gmail.com"
+        class: "fas fa-envelope"
+
+      - href: "https://medium.com/@carlosentrena"
+        class: "fab fa-medium-m"
+
+      - href: "https://www.linkedin.com/in/carlosentrena/"
+        class: "fab fa-linkedin-in"
 
   - name: Davor
     photo-1: "assets/pp-davor-1.jpg"
     photo-2: "assets/pp-davor-2.jpg"
     photo-3: "assets/pp-davor-3.jpg"
-    desc: Data Scientist
+    desc: IT Innovation / Management
     full-name: Davor Ljubenkov
     email: dljubenk@gmail.com
-    linkedin: "https://www.linkedin.com/in/dljubenk/"
-    medium: "" 
     href: "https://dljubenk.github.io/"
+    links:
+      - href: "mailto:dljubenk@gmail.com"
+        class: "fas fa-envelope"
+
+      - href: "https://dljubenk.github.io/"
+        class: "fas fa-link"
+
+      - href: "https://www.linkedin.com/in/dljubenk/"
+        class: "fab fa-linkedin-in"
 
   - name: Reza
     photo-1: "assets/pp-reza-1.jpg"
     photo-2: "assets/pp-reza-2.jpg"
     photo-3: "assets/pp-reza-3.jpg"
-    desc: Design Technologist
+    desc: Design / Tech / People
     full-name: Reza Arkan
     email: rezaarkan@gmail.com
-    linkedin: "https://www.linkedin.com/in/rezaarkan/"
-    medium: ""
     href: "https://rezaarkan.com"
+    links:
+      - href: "mailto:rezaarkan@gmail.com"
+        class: "fas fa-envelope"
+
+      - href: "https://www.rezaarkan.com"
+        class: "fas fa-link"
+
+      - href: "https://www.linkedin.com/in/rezaarkan/"
+        class: "fab fa-linkedin-in"
+
+      - href: "https://www.instagram.com/rezaarkan/"
+        class: "fab fa-instagram"

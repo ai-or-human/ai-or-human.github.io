@@ -2,8 +2,8 @@
 	<div class="navbar media-large">
 		<div class="wrapper">
 			<a class="emoji-container" href="{{ site.baseurl }}">
-				<img class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png">
-				<img class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png">
+				<img class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png" alt="human-emoji">
+				<img class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png" alt="robot-emoji">
 			</a>
 			<div class="text-container">
 				<div class="title">
@@ -23,8 +23,8 @@
 	<div class="navbar media-small">
 		<div class="wrapper">
 			<a class="emoji-container" href="{{ site.baseurl }}">
-				<img class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png">
-				<img class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png">
+				<img class="emoji human" src="{{ site.baseurl }}assets/emoji-human.png" alt="human-emoji">
+				<img class="emoji robot" src="{{ site.baseurl }}assets/emoji-ai.png" alt="robot-emoji">
 			</a>
 		</div>
 	</div>
@@ -34,7 +34,7 @@
 				<div class="text-container">
 					<h1 class="title">Was it difficult?</h1>
 					<div class="text-lead">
-						<span>The AI tools that generated this content are constantly improving. There is no easy and totally accurate way yet to detect whether an AI produced the media you are consuming, but we are convinced it should be a priority in the next years. Check out your results below and see how you compare with others!</span>
+						<span>The AI tools that generated this content are constantly improving. There is no easy and totally accurate way yet to detect whether an AI produced the media you are consuming. As you can imagine the social and ethical implications, we are convinced that this issue should be a priority in the next years.<br><br><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFHLS_kethylEbu7e5zjEtiTcQMz7Pdxh3tbJU5N1LVHy_xQ/viewform?usp=sf_link" target="_blank">Let us know what you think</a> and check out your results below. See how you compare with others!</span>
 					</div>
 				</div>
 				<div class="details-container">
@@ -46,7 +46,7 @@
 						</div>
 					</div>
 					<div class="overview-container">
-						<h3 class="heading-caption">Game Statistics</h3>
+						<h3 class="heading-caption">General Statistics</h3>
 						<div class="desc">
 							<div class="desc-item">
 								<div class="text">
@@ -61,7 +61,7 @@
 									<span data="avgResult">X</span>
 								</div>
 								<div class="label">
-									<span>Avg. Result</span>
+									<span>Average Result</span>
 								</div>
 							</div>
 							<div class="desc-item">
@@ -69,7 +69,8 @@
 									<span data="imagePercentage">X</span><span class="percentage">%</span>
 								</div>
 								<div class="label">
-									<span>Image Correct</span>
+									<span class="media-large">Image Answers Correct</span>
+									<span class="media-small">Correct (Images)</span>
 								</div>
 							</div>
 							<div class="desc-item">
@@ -77,7 +78,8 @@
 									<span data="textPercentage">X</span><span class="percentage">%</span>
 								</div>
 								<div class="label">
-									<span>Text Correct</span>
+									<span class="media-large">Text Answers Correct</span>
+									<span class="media-small">Correct (Texts)</span>
 								</div>
 							</div>
 						</div>
@@ -92,7 +94,7 @@
 	<div class="section-breakdown">
 		<div class="wrapper">
 			<h2>Answers</h2>
-			<p>Real images are stock photos taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a> and <a href="https://www.pexels.com/" target="_blank">Pexels</a> while AI generated ones are sourced from <a href="http://thispersondoesnotexist.com/" target="_blank">thispersondoesnotexist</a>. Real text articles are sourced from respectable online medias while AI texts are generated with <a href="https://talktotransformer.com/" target="_blank">Talk to Transformer</a> using headlines of real articles as the input.</p>
+			<p>Real images are stock photos taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a> and <a href="https://www.pexels.com/" target="_blank">Pexels</a> while AI generated ones are sourced from <a href="http://thispersondoesnotexist.com/" target="_blank">thispersondoesnotexist</a>. Real text articles are sourced from trusted online medias while AI texts are generated with <a href="https://talktotransformer.com/" target="_blank">Talk to Transformer</a> using headlines of real articles as the input.</p>
 			<div class="result breakdown">
 				<template id="resultItem">
 					<div class="result-item">

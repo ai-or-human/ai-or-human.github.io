@@ -10,6 +10,8 @@
 		margin-bottom: 1rem;
 		margin-right: 1rem;
 
+		text-decoration: none;
+
 		@include respond-at($bp-large){
 			margin-bottom: 1.5rem;
 		}
