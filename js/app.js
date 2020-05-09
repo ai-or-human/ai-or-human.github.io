@@ -155,15 +155,15 @@ function displayResult(){
       var overviewParticipants = overviewObject.total.participants.completed;
 
       var overviewAnswers = overviewObject.total.answersCompleted.answers;
-      var overviewCorrect = overviewObject.total.answersCompleted.correct;
+      var overviewCorrect = overviewObject.total.answersCompleted.correct || 0;
       var overviewAvgResult = (overviewCorrect/overviewParticipants).toFixed(0);
 
       var overviewImageAnswers = overviewObject.perContentType.image.answers;
-      var overviewImageCorrect = overviewObject.perContentType.image.correct;
+      var overviewImageCorrect = overviewObject.perContentType.image.correct || 0;
       var overviewImagePercentage = ((overviewImageCorrect/overviewImageAnswers) * 100).toFixed(0);
 
       var overviewTextAnswers = overviewObject.perContentType.text.answers;
-      var overviewTextCorrect = overviewObject.perContentType.text.correct;
+      var overviewTextCorrect = overviewObject.perContentType.text.correct || 0;
       var overviewTextPercentage = ((overviewTextCorrect/overviewTextAnswers) * 100).toFixed(0);
 
       var resultTemplate = $("template#resultItem").html();
