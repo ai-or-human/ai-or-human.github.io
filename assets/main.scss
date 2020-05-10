@@ -2,9 +2,6 @@
 ---
 
 @import
-	'vendors/reboot';
-
-@import
 	'utils/_media-query';
 
 @import
@@ -12,8 +9,8 @@
 	'base/_typography';
 
 @import
-	'components/_scaffolding',
-	'components/_navbar',
+	//'components/_scaffolding',
+	//'components/_navbar',
 	'components/_share-bar',
 	'components/_footer';
 
