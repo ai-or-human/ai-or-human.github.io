@@ -1,0 +1,57 @@
+.share-buttons{
+	display: flex;
+	flex-flow: wrap;
+
+	margin-top: 2rem;
+
+	justify-content: center;
+
+	h3{
+		margin-bottom: 1rem;
+	}
+
+	a{
+		margin: 0 0.5rem 0.5rem 0;
+		padding: 0.25rem 0.75rem;
+
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+
+		border-radius: 0.25rem;
+
+		@include respond-at($bp-large){
+			margin: 0 0.5rem 0 0;
+			padding: 0.5rem 0.75rem;
+		}
+
+		&.sfb{
+			background: #2b6cef;
+		}
+
+		&.stw{
+			background: #1DA1F2;
+		}
+
+		&.srd{
+			background: #FF5700;
+		}
+
+		&.sli{
+			background: #0077b5;
+		}
+
+		&.smail{
+			background: $clr-text-secondary;
+		}
+	}
+
+	i{
+		margin-right: 0.25rem;
+	}
+
+	span{
+		color: white;
+		font-size: 0.875rem;
+	}
+}
