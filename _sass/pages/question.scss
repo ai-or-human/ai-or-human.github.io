@@ -338,10 +338,7 @@
 			}
 
 			&:hover{
-				color: white;
-
-				background: $clr-accent;
-				border: 1px solid white;
+				background: rgba(201, 201, 201, 0.3)
 			}
 
 			input[type=radio]{
