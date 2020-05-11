@@ -284,6 +284,7 @@ function randomizeContent(page) {
 
   chosenContent = $('#page'+page+' .randomize > *:nth-child(2)');
   chosenContent.addClass("chosen");
+  chosenContent.attr("src",chosenContent.attr("data-src"));
 
   for(var i = 0; i < randomContent.length; i++){
     if(!$(randomContent[i]).hasClass("chosen")){

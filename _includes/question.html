@@ -26,7 +26,7 @@
 			<div class="image-container">
 				<div class="image randomize">
 					{% for image in content-set.image %}
-					<img class="random" src="{{ image.src }}" alt="" id={{ image.id }} question={{ content-set.question-id }}>
+					<img class="random" src="" data-src="{{ image.src }}" alt="" id={{ image.id }} question={{ content-set.question-id }}>
 					{% endfor %}
 				</div>
 			</div>
