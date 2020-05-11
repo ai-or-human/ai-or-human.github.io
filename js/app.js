@@ -1,6 +1,6 @@
 var page = 0;
 var startTime = new Date().toUTCString();
-var id = Math.floor(Math.random() * 10000);
+var id = Math.floor(Math.random() * 100000000000000);
 var db = null;
 
 var dbEntryPath = 'survey-data-' + env + '/entries/entry_';
