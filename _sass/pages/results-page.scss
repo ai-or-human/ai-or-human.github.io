@@ -92,6 +92,16 @@
 
 						flex: auto;
 
+						padding-top: 2rem;
+
+						text-align: center;
+
+						@include respond-at($bp-large){
+							padding-top: 0;
+
+							text-align: left;
+						}
+
 						.desc{
 							display: flex;
 
@@ -118,11 +128,7 @@
 
 									width: auto;
 
-									margin: 0 1.5rem;
-
-									&:first-child{
-										margin-left: 0;
-									}
+									margin: 0 3rem 0 0;
 								}
 
 								.text{
@@ -151,7 +157,13 @@
 					}
 
 					.share-container{
+						width: 100%;
+
 						margin-top: 2rem;
+
+						@include respond-at($bp-large){
+							width: auto;
+						}
 					}
 				}
 			}
