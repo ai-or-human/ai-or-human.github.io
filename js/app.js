@@ -15,6 +15,8 @@ function initQuiz(){
   var currentPage = $("#page"+page);
   var mosaic = $(".highlight-container.media-large .item");
 
+  displayStatistics();
+
   $('.page.load').removeClass('load');
 
   currentPage.addClass('show');
@@ -95,6 +97,45 @@ function loadOverviewData(callback){
   });
 }
 
+function displayStatistics(){
+  var overviewObject;
+
+  loadOverviewData(function(object){
+    overviewObject = object;
+
+    var overviewParticipants = overviewObject.total.participants.completed;
+
+    var overviewAnswers = overviewObject.total.answersCompleted.answers;
+    var overviewCorrect = overviewObject.total.answersCompleted.correct || 0;
+    var overviewAvgResult = (overviewCorrect/overviewParticipants).toFixed(0);
+
+    var overviewImageAnswers = overviewObject.perContentType.image.answers;
+    var overviewImageCorrect = overviewObject.perContentType.image.correct || 0;
+    var overviewImagePercentage = ((overviewImageCorrect/overviewImageAnswers) * 100).toFixed(0);
+
+    var overviewTextAnswers = overviewObject.perContentType.text.answers;
+    var overviewTextCorrect = overviewObject.perContentType.text.correct || 0;
+    var overviewTextPercentage = ((overviewTextCorrect/overviewTextAnswers) * 100).toFixed(0);
+
+    $('span[data="participants"').text(overviewParticipants);
+    $('span[data="avgResult"').text(overviewAvgResult);
+    $('span[data="imagePercentage"').text(overviewImagePercentage);
+    $('span[data="textPercentage"').text(overviewTextPercentage);
+
+    $('span[count="true"]').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+    });
+  })
+}
+
 function displayResult(){
   var resultObject;
   var overviewObject;
@@ -142,12 +183,6 @@ function displayResult(){
       overviewObject = object;
 
       var questionIndex = 0;
-
-      var overviewImageAnswers = overviewObject.perContentType.image.answers;
-      var overviewImageCorrect = overviewObject.perContentType.image.correct || 0;
-
-      var overviewTextAnswers = overviewObject.perContentType.text.answers;
-      var overviewTextCorrect = overviewObject.perContentType.text.correct || 0;
 
       var overviewTotalAnswers = overviewObject.total.answers.answers;
       var overviewTotalCorrect = overviewObject.total.answers.correct || 0;

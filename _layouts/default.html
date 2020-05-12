@@ -4,34 +4,35 @@
 {% include _head.html %}
 
 <body onload="start()">
-  <div>
-    {% for page in site.pages %}
-    <section id="page{{page.pageNo}}" class="page" value="{{ page.layout }}">
-      {% if page.layout == "landing-page" %}
-      {% include landing-page.html %}
-      {% endif %}
+  {% include _navbar.html %}
+  {% for page in site.pages %}
+  <section id="page{{page.pageNo}}" class="page" value="{{ page.layout }}">
+    {% if page.layout == "landing-page" %}
+    {% include landing-page.html %}
+    {% include _footer.html %}
+    {% endif %}
 
-      {% if page.layout == "instructions" %}
-      {% include instructions.html %}
-      {% endif %}
+    {% if page.layout == "instructions" %}
+    {% include instructions.html %}
+    {% endif %}
 
-      {% if page.layout == "question" %}
-      {% include question.html 
-        question-title=page.question-title 
-        question-text=page.question-text 
-        button=page.button 
-        page=page.pageNo
-        type=page.type
-        content-set=page.content-set
-      %}
-      {% endif %}
+    {% if page.layout == "question" %}
+    {% include question.html 
+      question-title=page.question-title 
+      question-text=page.question-text 
+      button=page.button 
+      page=page.pageNo
+      type=page.type
+      content-set=page.content-set
+    %}
+    {% endif %}
 
-      {% if page.layout == "results-page" %}
-      {% include results-page.html %}
-      {% endif %}
-    </section>
-    {% endfor %}
-  </div>
+    {% if page.layout == "results-page" %}
+    {% include results-page.html %}
+    {% include _footer.html %}
+    {% endif %}
+  </section>
+  {% endfor %}
 
   {% include _scripts.html %}
 </body>

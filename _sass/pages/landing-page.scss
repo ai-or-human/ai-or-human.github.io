@@ -372,6 +372,77 @@
 		}
 	}
 
+	.section-counters{
+		text-align: center;
+
+		background: #f6f6f6;
+
+		@include respond-at($bp-large){
+			background: white;
+		}
+
+		.counter-container{
+			display: flex;
+
+			margin-top: 1.5rem;
+
+			flex-flow: wrap;
+
+			.counter{
+				display: flex;
+
+				flex: auto;
+
+				width: 50%;
+				height: 8rem;
+
+				margin: 0.5rem 0;
+
+				flex-flow: column;
+				align-items: center;
+				justify-content: center;
+
+				text-align: center;
+
+
+				@include respond-at($bp-xl){
+					width: 20%;
+				}
+
+				.text{
+					font-size: 3rem;
+					font-weight: bold;
+					color: $clr-text-primary;
+
+					@include respond-at($bp-large){
+						font-size: 3rem;
+					}
+
+					@include respond-at($bp-xl){
+						font-size: 3.5rem;
+					}
+
+					.percentage{
+						margin-right: -0.875rem;
+
+						font-size: 1.5rem;
+						color: $clr-text-secondary;
+					}
+				}
+
+				.label{
+					font-size: 0.875rem;
+					font-weight: lighter;
+					color: $clr-text-primary;
+
+					@include respond-at($bp-large){
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+
 	.section-creators{
 		background: #f6f6f6;
 
