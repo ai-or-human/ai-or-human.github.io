@@ -5,13 +5,12 @@
 
 <body onload="start()">
   {% include _navbar.html %}
+  <section id="page0" class="page show">
+  {% include landing-page.html %}
+  {% include _footer.html %}
+  </section>
   {% for page in site.pages %}
   <section id="page{{page.pageNo}}" class="page" value="{{ page.layout }}">
-    {% if page.layout == "landing-page" %}
-    {% include landing-page.html %}
-    {% include _footer.html %}
-    {% endif %}
-
     {% if page.layout == "instructions" %}
     {% include instructions.html %}
     {% endif %}

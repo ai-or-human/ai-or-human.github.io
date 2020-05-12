@@ -32,6 +32,8 @@ function initQuiz(){
   page++;
 
   randomizeContent(page);
+
+  $('.page[value="landing-page"]').remove();
 }
 
 function updateEntries(sendObject){
