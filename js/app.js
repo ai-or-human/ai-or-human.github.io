@@ -8,6 +8,10 @@ var dbOverviewPath = 'survey-data-' + env + '/overview/';
 
 function initDB()
 {
+  firebase.initializeApp(config);
+  if (env == "production"){
+    firebase.analytics();
+  }
   db = firebase.database();
 }
 
@@ -105,17 +109,17 @@ function displayStatistics(){
   loadOverviewData(function(object){
     overviewObject = object;
 
-    var overviewParticipants = overviewObject.total.participants.completed;
+    var overviewParticipants = overviewObject.total.participants.completed || 0;
 
-    var overviewAnswers = overviewObject.total.answersCompleted.answers;
+    var overviewAnswers = overviewObject.total.answersCompleted.answers || 0;
     var overviewCorrect = overviewObject.total.answersCompleted.correct || 0;
     var overviewAvgResult = (overviewCorrect/overviewParticipants).toFixed(0);
 
-    var overviewImageAnswers = overviewObject.perContentType.image.answers;
+    var overviewImageAnswers = overviewObject.perContentType.image.answers || 0;
     var overviewImageCorrect = overviewObject.perContentType.image.correct || 0;
     var overviewImagePercentage = ((overviewImageCorrect/overviewImageAnswers) * 100).toFixed(0);
 
-    var overviewTextAnswers = overviewObject.perContentType.text.answers;
+    var overviewTextAnswers = overviewObject.perContentType.text.answers || 0;
     var overviewTextCorrect = overviewObject.perContentType.text.correct || 0;
     var overviewTextPercentage = ((overviewTextCorrect/overviewTextAnswers) * 100).toFixed(0);
 
