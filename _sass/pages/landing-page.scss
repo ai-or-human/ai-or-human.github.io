@@ -15,6 +15,16 @@
 
 			@include respond-at($bp-large){
 				margin-top: 5%;
+
+				align-items: baseline;
+			}
+
+			@include respond-at($bp-xl){
+				align-items: normal;
+			}
+
+			@include respond-at($bp-xl-3){
+				align-items: baseline;
 			}
 
 			.text-container{
@@ -26,6 +36,14 @@
 					max-width: 60%;
 
 					padding-right: 3rem;
+				}
+
+				@include respond-at($bp-xl){
+					padding-top: 2.5rem;
+				}
+
+				@include respond-at($bp-xl-3){
+					padding-top: 0;
 				}
 
 				.subtitle{
@@ -59,8 +77,6 @@
 
 				flex: 0 0 40%;
 
-				margin-top: -2rem;
-
 				overflow: hidden;
 
 				.highlight{
@@ -68,9 +84,17 @@
 					flex-flow: column wrap;
 
 					width: 100%;
-					height: 30rem;
+					height: 25rem;
 
 					padding: 0.25rem;
+
+					@include respond-at($bp-xl){
+						height: 30rem;
+					}
+
+					@include respond-at($bp-xl-3){
+						height: 25rem;
+					}
 
 					.item{
 						position: relative;
@@ -84,6 +108,10 @@
 						border-radius: 0.25rem;
 
 						overflow: hidden;
+
+						@include respond-at($bp-xl-3){
+							width: 18%;
+						}
 
 						.cover{
 							display: flex;
@@ -153,6 +181,56 @@
 					span{
 						color: $clr-text-secondary;
 					}
+				}
+			}
+		}
+	}
+
+	.section-supports{
+		text-align: left;
+
+		@include respond-at($bp-large){
+			text-align: center;
+		}
+
+		.wrapper{
+			padding-top: 1rem;
+		}
+
+		.logo-container{
+			display: flex;
+
+			justify-content: left;
+
+			padding-top: 1rem;
+
+			@include respond-at($bp-large){
+				justify-content: center;
+			}
+
+			.logo{
+				display: flex;
+
+				max-width: 14rem;
+
+				flex: auto;
+				align-items: center;
+
+				@include respond-at($bp-large){
+					max-width: 18rem;
+				}
+
+				&:first-child{
+					margin-left: -1.75rem;
+
+					@include respond-at($bp-large){
+						margin-left: 0;
+					}
+				}
+
+				img{
+					width: 100%;
+					height: auto;
 				}
 			}
 		}

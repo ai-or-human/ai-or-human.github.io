@@ -16,6 +16,11 @@ mosaic-assets:
   - "assets/lp/7298.jpg"
   - "assets/lp/7820.jpg"
 
+supporters:
+  - name: DCLead
+    src: "assets/support-dclead.png"
+    href: "http://dclead.eu/"
+
 creators:
   - name: Carlos
     photo-1: "assets/pp-carlos-1.jpg"

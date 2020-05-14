@@ -30,6 +30,18 @@
 			</div>
 		</div>
 	</section>
+	<section class="section-supports">
+		<div class="wrapper">
+			<h3 class="heading-caption">A student project supported by</h3>
+			<div class="logo-container">
+				{% for supporter in site.data.general.supporters %}
+				<a class="logo" href="{{ supporter.href }}" target="_blank">
+					<img height="100px" src="" alt="" data-echo="{{ supporter.src }}">
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
 	<section class="section-highlight media-small">
 		<div class="highlight-container">
 			<div class="highlight">
