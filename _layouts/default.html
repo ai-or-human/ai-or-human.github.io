@@ -4,8 +4,8 @@
 {% include _head.html %}
 
 <body onload="start()">
-  {% include _navbar.html %}
   <section id="page0" class="page show">
+  {% include _navbar.html %}
   {% include landing-page.html %}
   {% include _footer.html %}
   </section>
@@ -27,6 +27,9 @@
     {% endif %}
 
     {% if page.layout == "results-page" %}
+    {% include _navbar.html
+      page=page.layout
+    %}
     {% include results-page.html %}
     {% include _footer.html %}
     {% endif %}

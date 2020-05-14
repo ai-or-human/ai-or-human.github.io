@@ -11,10 +11,18 @@
     </div>
     <div class="link-container">
       <div class="link">
-        <a href="{{ site.baseurl }}#s-about">About</a>
+        {% if include.page == "results-page" %}
+          <a href="{{ site.baseurl }}#s-about" target="_blank">About</a>
+        {% else %}
+          <a href="{{ site.baseurl }}#s-about">About</a>
+        {% endif %}
       </div>
       <div class="link">
-        <a href="{{ site.baseurl }}#s-creators">Creators</a>
+        {% if include.page == "results-page" %}
+          <a href="{{ site.baseurl }}#s-creators" target="_blank">Creators</a>
+        {% else %}
+          <a href="{{ site.baseurl }}#s-creators">Creators</a>
+        {% endif %}
       </div>
       <div class="link">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFHLS_kethylEbu7e5zjEtiTcQMz7Pdxh3tbJU5N1LVHy_xQ/viewform" target="_blank">Contact</a>
